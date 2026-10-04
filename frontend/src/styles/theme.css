@@ -1,4 +1,4 @@
-/* Système de design FirstBreath — inspiré de la première page (crème, bleu-vert, Playfair / DM Sans).
+/* Système de design FirstBreath — inspiré de la première page (crème, bleu-vert, DM Sans).
 
    Règles :
    - le bleu-vert de marque est réservé à l'en-tête, au logo, au bouton appareil photo et aux actions
@@ -36,11 +36,11 @@
 
   /* Typographie */
   --police-texte: 'DM Sans', 'Noto Naskh Arabic', Tahoma, system-ui, sans-serif;
-  --police-titre: 'Playfair Display', Georgia, 'Noto Naskh Arabic', serif;
+  --police-titre: var(--police-texte); /* une seule police : les titres se distinguent par la taille et le semi-gras */
   --taille-petite: 13px;       /* informations secondaires */
   --taille-texte: 15px;        /* texte courant et bulles */
   --taille-valeur: 15px;       /* valeurs lues, en semi-gras */
-  --taille-titre: 20px;        /* titres Playfair modérés (18 à 20 px) */
+  --taille-titre: 20px;        /* titres modérés (18 à 20 px), semi-gras */
 
   /* Formes : coins doux, coin de départ presque droit (rappel du logo) */
   --rayon: 16px;

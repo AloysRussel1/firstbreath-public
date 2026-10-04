@@ -3,7 +3,6 @@ import CarteQuestion from '../components/CarteQuestion'
 import CarteRenumerisation from '../components/CarteRenumerisation'
 import Compositeur from '../components/Compositeur'
 import DetailDossier, { ContenuDossier } from '../components/DetailDossier'
-import { IconeAppareil } from '../components/Icones'
 import FilePages from '../components/FilePages'
 import IllustrationRegistre from '../components/IllustrationRegistre'
 import MessageBlocage from '../components/MessageBlocage'
@@ -284,13 +283,8 @@ export default function Conversation() {
           )}
         </div>
 
-        {saisie ? (
-          <Compositeur saisie={saisie} onFermer={() => setSaisie(null)} />
-        ) : (
-          <button type="button" className="bouton-photo flottant" onClick={() => inputPhoto.current?.click()} aria-label={t('conv.photo')}>
-            <IconeAppareil taille={26} />
-          </button>
-        )}
+        {/* L'appareil photo est au centre de la barre d'onglets (BarreOnglets), qui se masque pendant la saisie. */}
+        {saisie && <Compositeur saisie={saisie} onFermer={() => setSaisie(null)} />}
         <input ref={inputPhoto} type="file" accept="image/png,image/jpeg" capture="environment" hidden
           onChange={(e) => { conv.prendrePhoto(e.target.files?.[0]); e.target.value = '' }} />
       </div>

@@ -19,12 +19,16 @@ function useDecalageClavier() {
 
 // Zone de saisie fixée en bas, comme dans WhatsApp : champ large adapté au type de valeur, [Envoyer], [Annuler].
 // saisie = { titre, type: 'champ' | 'code', definition, valeurInitiale, onEnvoyer(valeur), onVide? }
-// onEnvoyer peut renvoyer false (valeur refusée) : la zone reste ouverte.
+// onEnvoyer peut renvoyer false ou { ok: false, refus } (valeur refusée) : la zone reste ouverte et affiche le refus.
 export default function Compositeur({ saisie, onFermer }) {
   const { t } = useLangue()
   const decalage = useDecalageClavier()
   const envoyer = async (valeur) => {
-    if ((await saisie.onEnvoyer(valeur)) !== false) onFermer()
+    const r = await saisie.onEnvoyer(valeur)
+    if (r === false) return undefined
+    if (r?.ok === false) return r
+    onFermer()
+    return undefined
   }
   return (
     <div className="compositeur" role="region" aria-label={saisie.titre}
@@ -33,7 +37,7 @@ export default function Compositeur({ saisie, onFermer }) {
       <div className="compositeur-tete">
         <b dir="auto">{saisie.titre}</b>
         {saisie.onVide && (
-          <button type="button" className="lien-texte" onClick={async () => { if ((await saisie.onVide()) !== false) onFermer() }}>
+          <button type="button" className="lien-texte" onClick={async () => { const r = await saisie.onVide(); if (r !== false && r?.ok !== false) onFermer() }}>
             {t('question.vide')}
           </button>
         )}

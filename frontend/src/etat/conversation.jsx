@@ -5,9 +5,10 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import statuts from '../../../shared/statuts.json'
 import { api } from '../api'
 import { lireDocument, lirePhoto, sauverDocument, sauverPhoto, supprimerPhotos } from '../lib/coffre'
-import { dateLisible, estDouteux, estFiable, pageVide } from '../lib/format'
+import { dateLisible, definitionChamp, estDouteux, estFiable, pageVide } from '../lib/format'
 import { controleQualiteActif, panneCentraleSimulee } from '../lib/preferences'
 import { verifierQualite } from '../lib/qualitePhoto'
+import { erreurServeur, normaliserSaisie } from '../lib/saisie'
 import { TYPES_PAGE } from '../lib/statuts'
 import { useConnexion } from './connexion'
 import { naviguer } from './route'
@@ -455,23 +456,33 @@ export function FournisseurConversation({ children }) {
   const champDuDossier = useCallback((cle, pageNo) =>
     dossier?.pages?.find((p) => p.page_no === pageNo)?.champs.find((c) => c.champ === cle), [dossier])
 
+  // Renvoie { ok: true, valeur } ou { ok: false, refus: { cle, params } } : la zone de saisie affiche le refus.
+  // Toute valeur passe d'abord au format du schéma (lib/saisie.js) : « 11/7 » -> « 110/70 », JJ/MM/AAAA -> ISO…
   const enregistrerChamp = useCallback(async (champ, page, changement) => {
+    const definition = definitionChamp(schema, champ.champ)
+    let valeur = null
+    if (!changement.vide) {
+      const n = normaliserSaisie(definition, changement.valeur)
+      if (n.erreur) return { ok: false, refus: n.erreur }
+      valeur = n.valeur
+    }
     const corps = changement.vide
       ? { champ: champ.champ, valeur: null, statut: 'NON_FOURNI', confiance: 1 }
-      : { champ: champ.champ, valeur: changement.valeur, statut: 'CONNU', confiance: 1 }
+      : { champ: champ.champ, valeur, statut: 'CONNU', confiance: 1 }
     setOccupe(true)
     try {
       const r = await api.corrigerChamp(dossier.dossier_id, { ...corps, page_no: page.page_no, type_page: page.type_page })
       setDossier(r.dossier)
-      return true
+      return { ok: true, valeur }
     } catch (erreur) {
-      if (erreur.hors_ligne) dire('msg.horsLigneReponse')
-      else dire('msg.valeurRefusee', { detail: erreur.message })
-      return false
+      if (erreur.hors_ligne) return { ok: false, refus: { cle: 'msg.horsLigneReponse' } }
+      console.warn('Valeur refusée par le serveur :', champ.champ, erreur.message)
+      if (changement.vide) dire('msg.valeurRefusee')
+      return { ok: false, refus: erreurServeur(definition, erreur.message) }
     } finally {
       setOccupe(false)
     }
-  }, [dire, dossier])
+  }, [dire, dossier, schema])
 
   const repondre = useCallback(async (message, { action, valeur }) => {
     const champ = champDuDossier(message.cle, message.pageNo)
@@ -487,8 +498,13 @@ export function FournisseurConversation({ children }) {
       return
     }
     const changement = action === 'vide' ? { vide: true } : { valeur: action === 'confirmer' ? champ.valeur : valeur }
-    if (!(await enregistrerChamp(champ, page, changement))) return
-    const valeurAffichee = { champ: message.cle, valeur: action === 'confirmer' ? champ.valeur : valeur }
+    const resultat = await enregistrerChamp(champ, page, changement)
+    if (!resultat.ok) {
+      // Correction : l'erreur s'affiche dans la zone de saisie. Confirmation (pas de zone) : message dans le fil.
+      if (action === 'confirmer') dire(resultat.refus.cle, resultat.refus.params)
+      return resultat
+    }
+    const valeurAffichee = { champ: message.cle, valeur: action === 'vide' ? null : resultat.valeur }
     if (action === 'confirmer') repondreSf('sf.confirme', { valeur: valeurAffichee })
     else if (action === 'vide') repondreSf('sf.vide')
     else repondreSf('sf.corrige', { valeur: valeurAffichee })
@@ -832,6 +848,42 @@ export function FournisseurConversation({ children }) {
     dire('pages.retiree', { n: c.pageNo })
   }, [dire])
 
+  // Rouvre un dossier existant dans la conversation (vue du dossier, « Reprendre la vérification ») :
+  // la conversation en cours est remplacée (son dossier reste sur le serveur), puis la première question
+  // restante est posée. Refusé tant qu'une photo du registre en cours attend d'être envoyée ou lue.
+  const reprendreDossier = useCallback((d) => {
+    if (capturesRef.current.some((c) => EN_ATTENTE.includes(c.etat))) return false
+    capturesRef.current.forEach((c) => c.url && URL.revokeObjectURL(c.url))
+    supprimerPhotos(capturesRef.current.map((c) => c.localId)).catch(() => {})
+    journal.current = []
+    sauverDocument('journal', []).catch(() => {})
+    setSessionId(nouvelleSession(d.session_id))
+    setDetailOuvert(false)
+    setFiltreAVerifier(false)
+    const reprises = (d.captures || []).map((c) => ({ localId: nouvelId(), captureId: c.capture_id, pageNo: c.page_no, etat: c.etat, typePage: c.type_page, fichier: null, url: null }))
+    capturesRef.current = reprises
+    dernierePage.current = Math.max(0, ...reprises.map((c) => c.pageNo))
+    terminees.current = new Set(reprises.map((c) => c.localId))
+    setCaptures(reprises)
+    dossierRef.current = d
+    setDossier(d)
+    fileRef.current = []
+    activeRef.current = null
+    setQuestionActive(null)
+    setReponses({}); setPagesEnSaisie([])
+    bilansRef.current = {}
+    setBilans({})
+    setMessages([BIENVENUE, { id: nouvelId(), auteur: 'agent', type: 'texte', texte: texte('reprise.message', { titre: d.patiente_code || d.numero_fiche
+      || texte('dossiers.titreDate', { date: dateLisible(d.captures?.[0]?.date_capture || d.historique_etats?.[0]?.date),
+        type: { typePage: [...(d.pages || [])].sort((a, b) => a.page_no - b.page_no)[0]?.type_page || 'IDENTIFICATION' } }) }) }])
+    setTimeout(() => reposerQuestions(), 0)
+    // Photos d'origine (vignettes des questions), selon le rôle ; sans connexion, les questions restent lisibles.
+    reprises.forEach((c) => {
+      api.image(c.captureId).then((blob) => majCapture(c.localId, { url: URL.createObjectURL(blob) })).catch(() => {})
+    })
+    return true
+  }, [majCapture, reposerQuestions])
+
   // Nouveau registre : refusé tant qu'une photo attend d'être envoyée ou lue (aucun enregistrement perdu).
   const nouveauRegistre = useCallback(() => {
     if (capturesRef.current.some((c) => EN_ATTENTE.includes(c.etat))) return false
@@ -856,11 +908,11 @@ export function FournisseurConversation({ children }) {
   const valeur = useMemo(() => ({
     pret, schema, seuil, sessionId, captures, dossier, messages, questionActive, reponses, detailOuvert, pagesEnSaisie, occupe,
     setDetailOuvert, prendrePhoto, repondre, choisir, enregistrerChamp, toutConfirmer, validerDossier, nouveauRegistre,
-    champDuDossier, soumettreCode, codeRecopie, appliquerRenumerisation, retirerCapture, blocages, requis, filtreAVerifier, setFiltreAVerifier, fiablesAConfirmer,
-    enregistrerAppareil: (fonction) => { ouvrirAppareilRef.current = fonction },
+    champDuDossier, soumettreCode, codeRecopie, appliquerRenumerisation, retirerCapture, reprendreDossier, blocages, requis, filtreAVerifier, setFiltreAVerifier, fiablesAConfirmer,
+    ouvrirAppareil, enregistrerAppareil: (fonction) => { ouvrirAppareilRef.current = fonction },
   }), [pret, schema, seuil, sessionId, captures, dossier, messages, questionActive, reponses, detailOuvert, pagesEnSaisie, occupe,
     prendrePhoto, repondre, choisir, enregistrerChamp, toutConfirmer, validerDossier, nouveauRegistre, champDuDossier,
-    soumettreCode, codeRecopie, appliquerRenumerisation, retirerCapture, blocages, requis, filtreAVerifier, fiablesAConfirmer])
+    soumettreCode, codeRecopie, appliquerRenumerisation, retirerCapture, reprendreDossier, blocages, requis, filtreAVerifier, fiablesAConfirmer, ouvrirAppareil])
 
   return <ConversationContexte.Provider value={valeur}>{children}</ConversationContexte.Provider>
 }

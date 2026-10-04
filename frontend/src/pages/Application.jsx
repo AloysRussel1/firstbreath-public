@@ -16,7 +16,8 @@ export default function Application({ onglet, identifiant }) {
   const { t } = useLangue()
   const { captures } = useConversation()
   const enFile = captures.filter((c) => FILE.includes(c.etat)).length
-  const titre = t(`nav.${onglet}`)
+  // Les onglets disent « Messages », « Statistiques » (courts) ; l'écran garde son titre complet.
+  const titre = { conversation: t('titre.conversation'), tableau: t('tableau.titre') }[onglet] || t(`nav.${onglet}`)
 
   return (
     <div className="application">

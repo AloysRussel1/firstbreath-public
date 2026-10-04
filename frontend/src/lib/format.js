@@ -37,6 +37,14 @@ export function dateLisible(iso) {
   return m ? `${m[3]}/${m[2]}/${m[1]}` : iso
 }
 
+// Horodatage du serveur (UTC) -> « 04/10/2026 · 14:32 » à l'heure locale du téléphone.
+export function dateHeureLisible(iso) {
+  const d = new Date(iso || '')
+  if (Number.isNaN(d.getTime())) return dateLisible(iso)
+  const deux = (n) => String(n).padStart(2, '0')
+  return `${deux(d.getDate())}/${deux(d.getMonth() + 1)}/${d.getFullYear()} · ${deux(d.getHours())}:${deux(d.getMinutes())}`
+}
+
 export function formaterValeur(definition, valeur, t = (cle) => ({ 'valeur.oui': 'Oui', 'valeur.non': 'Non', 'valeur.aucuneCase': 'Aucune case cochée', 'valeur.aucun': 'Aucun' }[cle])) {
   if (valeur === null || valeur === undefined) return '—'
   const type = definition?.type
@@ -95,4 +103,14 @@ const SECTIONS = [
 
 export function sectionDe(cle) {
   return (SECTIONS.find(([prefixe]) => cle.startsWith(prefixe)) || [null, 'Autres'])[1]
+}
+
+// Dates qui devraient être passées au moment de la photo (consultation, venue à une visite, DDR, accouchement) ;
+// les rendez-vous et la date prévue d'accouchement sont normalement dans le futur.
+const DATES_PASSEES = /(\.date_consultation|\.date_venue|^grossesse\.ddr|^accouchement\.date)$/
+
+// Vrai si une telle date lue est postérieure à la date de capture de la photo (avertissement seulement).
+export function datePosterieure(champ, dateCapture) {
+  if (!dateCapture || typeof champ.valeur !== 'string' || !DATES_PASSEES.test(champ.champ)) return false
+  return /^\d{4}-\d{2}-\d{2}$/.test(champ.valeur) && champ.valeur > String(dateCapture).slice(0, 10)
 }

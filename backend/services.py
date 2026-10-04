@@ -607,7 +607,9 @@ def patch_field(record_id: str, payload: dict[str, Any], actor_id: str) -> dict[
     candidate = {"champ": field_key, "valeur": value, "statut": status, "confiance": float(confidence), "page_source": page_no, "source": "manual", "modifie_par": actor_id, "date_modification": now_iso()}
     errors, _ = valider_page({"type_page": page["type_page"], "champs": [candidate]})
     if errors:
-        raise ServiceError(422, "Invalid field value.")
+        # Détail lisible pour le diagnostic (ex. « tension : valeur '11/7' ne respecte pas le type tension ») ;
+        # l'interface affiche son propre message simple selon le type du champ.
+        raise ServiceError(422, f"Invalid field value: {errors[0]}")
 
     with database.connect() as db:
         record = _read_record_row(db.execute("SELECT payload FROM records WHERE id = ?", (record_id,)).fetchone())

@@ -58,9 +58,12 @@ export default {
   'apropos.limites.titre': 'Out of scope',
   'apropos.limites.texte': 'No diagnosis, no triage, no clinical recommendation. Demonstration data is synthetic.',
 
-  'nav.conversation': 'Conversation',
+  'nav.conversation': 'Messages',
+  'titre.conversation': 'Conversation',
   'nav.dossiers': 'Records',
-  'nav.tableau': 'Dashboard',
+  'nav.tableau': 'Statistics',
+  'nav.principale': 'Main navigation',
+  'nav.avecFile': ({ onglet, n }) => `${onglet}, ${n} ${n === 1 ? 'photo' : 'photos'} waiting`,
   'nav.reglages': 'Settings',
   'nav.accueil': 'Back to home',
 
@@ -150,6 +153,18 @@ export default {
   'editeur.systolique': 'Systolic',
   'editeur.diastolique': 'Diastolic',
   'editeur.marquerVide': 'Mark as “empty on paper”',
+  'editeur.formatDate': 'DD/MM/YYYY',
+
+  // Input errors (shown in the input area)
+  'erreurSaisie.date': 'Date expected as DD/MM/YYYY',
+  'erreurSaisie.entier': 'Whole number expected, for example 3',
+  'erreurSaisie.decimal': 'Number expected, for example 38.5',
+  'erreurSaisie.tension': 'Blood pressure expected as 110/70 (or 11/7)',
+  'erreurSaisie.choix': 'Choose one of the proposed answers',
+  'erreurSaisie.liste': 'Tick only the proposed boxes',
+  'erreurSaisie.booleen': 'Answer Yes or No',
+  'erreurSaisie.vide': 'Write a value, or mark it “empty on paper”',
+  'erreurSaisie.identifiant': 'This looks like a phone number or an ID card number: it is not saved',
 
   'valeur.oui': 'Yes',
   'valeur.non': 'No',
@@ -455,4 +470,12 @@ export default {
   'option.autreRegistre': 'No, another patient: new register',
   'editeur.cochezAide': 'Tick the boxes that are ticked in the register.',
   'aide.toutConfirmer': 'Confirms at once the information read with certainty. Points to check are still handled one by one.',
+
+  // Record view
+  'dossiers.titreCode': 'Patient {code}',
+  'dossiers.titreDate': 'Record of {date} · {type}',
+  'dossiers.sansNumero': 'No record number',
+  'dossiers.reprendre': ({ n }) => (n === 0 ? 'Resume checking' : `Resume checking (${n} ${n === 1 ? 'question' : 'questions'})`),
+  'dossiers.datePosterieure': 'Date after the photo, to check',
+  'reprise.message': 'Resuming the check: {titre}. I will show you the remaining questions one by one.',
 }

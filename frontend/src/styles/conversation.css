@@ -41,13 +41,13 @@
 .ouvrir-dossier { flex: none; min-height: 36px; padding: 0 var(--espace-3); border: 1.5px solid var(--encre); border-radius: var(--rayon-pilule); background: var(--papier); color: var(--encre); font-weight: 700; font-size: 13px; cursor: pointer; }
 .file-pages-detail { padding: 4px var(--gouttiere) var(--espace-2); border-top: 1px solid var(--papier-ligne); }
 .file-pages-detail ul { list-style: none; margin: 0 0 var(--espace-2); padding: 0; }
-.file-pages-detail li { display: flex; align-items: center; gap: var(--espace-3); padding: 4px 0; border-bottom: 1px solid var(--papier-ligne); }
-.file-pages-texte { flex: 1; display: flex; flex-direction: column; font-size: 14px; line-height: 1.3; }
+.file-pages-detail li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px var(--espace-3); padding: 4px 0; border-bottom: 1px solid var(--papier-ligne); }
+.file-pages-texte { flex: 1; min-width: 0; display: flex; flex-direction: column; font-size: 14px; line-height: 1.3; }
 .file-pages-texte small { color: var(--encre-secondaire); font-size: 13px; }
 
 /* ---------- Fil ---------- */
 .fil-cadre { position: relative; flex: 1; min-height: 0; display: flex; }
-.fil { flex: 1; overflow-y: auto; padding: var(--espace-3) var(--gouttiere) 88px; display: flex; flex-direction: column; gap: var(--espace-2); }
+.fil { flex: 1; overflow-y: auto; padding: var(--espace-3) var(--gouttiere) var(--espace-4); display: flex; flex-direction: column; gap: var(--espace-2); }
 .ligne-message { display: flex; animation: arrivee var(--duree) var(--courbe) both; }
 .cote-sf { justify-content: flex-end; }
 .accueil-conversation { margin: auto 0; text-align: center; padding: var(--espace-4) var(--espace-2); }
@@ -71,7 +71,12 @@
   cursor: pointer;
 }
 
-.bulle { max-width: min(92%, 640px); padding: 8px 12px; border-radius: var(--rayon); font-size: var(--taille-texte); line-height: 1.45; }
+.bulle { max-width: min(92%, 640px); min-width: 0; padding: 8px 12px; border-radius: var(--rayon); font-size: var(--taille-texte); line-height: 1.45; }
+/* Règle générale des bulles et cartes du fil : le texte n'est jamais écrasé par un bouton. Les textes des conteneurs
+   flexibles peuvent rétrécir (min-width: 0) mais se coupent entre les mots ; un mot n'est coupé que s'il est plus
+   long que toute la ligne (break-word), jamais lettre par lettre pour faire de la place à un bouton. */
+.fil :where(.bulle, .carte-papier) { overflow-wrap: break-word; }
+.fil :where(.bulle, .carte-papier) :where(p, span, b, li, dt, dd, small, strong) { min-width: 0; }
 .bulle p { margin: 0; }
 .bulle p + p { margin-top: var(--espace-2); }
 .bulle-agent { background: var(--papier); border: 1px solid var(--papier-bord); border-top-left-radius: var(--rayon-depart); box-shadow: var(--ombre-papier); }
@@ -103,6 +108,8 @@
 
 /* ---------- Réponses rapides ---------- */
 .choix-rapides { display: flex; flex-wrap: wrap; gap: var(--espace-2); margin-top: var(--espace-3); }
+/* Téléphone : les boutons sous le texte, en ligne s'ils tiennent, sinon chacun sur toute la largeur. */
+@media (max-width: 599px) { .fil .choix-rapides > button { flex: 1 1 auto; } }
 .choix-rapides button, .panneau-pied button {
   min-height: var(--cible);
   padding: 0 var(--espace-4);
@@ -176,7 +183,7 @@
 .renum-table th, .renum-table td { padding: 4px 6px; border-bottom: 1px solid var(--papier-ligne); text-align: left; vertical-align: middle; }
 .renum-table thead th { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--encre-secondaire); border-bottom: 1px solid var(--papier-bord); }
 .renum-table tbody th { font-weight: 600; }
-.renum-table td { overflow-wrap: anywhere; }
+.renum-table td { overflow-wrap: break-word; }
 .renum-table td.retenue { font-weight: 700; box-shadow: inset 3px 0 0 var(--encre); background: var(--sable); }
 .renum-entete-etroit { display: none; }
 .renum-choix { display: inline-flex; }
@@ -197,7 +204,7 @@
   .renum-table td:nth-of-type(1), .renum-table td:nth-of-type(2) { display: none; }
   .renum-table td:last-child { display: block; }
   .renum-choix { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
-  .renum-choix button { padding: 4px 8px; text-align: start; font-weight: 600; overflow-wrap: anywhere; }
+  .renum-choix button { min-width: 0; padding: 4px 8px; text-align: start; font-weight: 600; overflow-wrap: break-word; }
   .choix-court { display: none; }
   .choix-valeur { display: inline; }
 }
@@ -226,7 +233,7 @@
 .question-texte { min-width: 0; flex: 1; }
 .question-libelle { margin: 0; font-weight: 700; color: var(--encre); }
 .question-lu { margin: 2px 0 0; color: var(--encre); }
-.valeur-lue { font-size: 16px; font-weight: 600; color: var(--encre); overflow-wrap: anywhere; }
+.valeur-lue { font-size: 16px; font-weight: 600; color: var(--encre); overflow-wrap: break-word; }
 .question-raison { margin: var(--espace-1) 0 0; color: var(--encre); font-size: var(--taille-petite); }
 .question.repondue { font-size: var(--taille-petite); color: var(--encre-secondaire); padding: 2px var(--espace-2); }
 
@@ -281,6 +288,8 @@
   background: #fff;
   font-size: var(--taille-valeur);
 }
+.editeur input[aria-invalid="true"] { border-color: var(--hors-ligne-encre); }
+.erreur-saisie { flex-basis: 100%; margin-top: var(--espace-2); }
 .tension { display: flex; align-items: center; gap: var(--espace-2); }
 .tension input { width: 92px; }
 .unite { color: var(--encre-secondaire); }
@@ -415,7 +424,7 @@
 button.ligne-bouton:hover { background: var(--creme); }
 .ligne-libelle { font-size: var(--taille-petite); color: var(--encre-secondaire); }
 .ligne-libelle::after { content: ' :'; }
-.ligne-valeur { font-size: var(--taille-valeur); font-weight: 600; color: var(--encre); overflow-wrap: anywhere; }
+.ligne-valeur { min-width: 0; font-size: var(--taille-valeur); font-weight: 600; color: var(--encre); overflow-wrap: break-word; }
 .ligne-statut { display: flex; align-items: center; justify-content: flex-end; gap: 6px; }
 .ligne-statut .statut { padding: 0; background: none; }
 .verifie { font-size: 12px; font-weight: 700; color: var(--encre); border: 1px solid var(--encre); border-radius: 6px; padding: 0 5px; }
@@ -458,10 +467,6 @@ button.ligne-bouton:hover { background: var(--creme); }
 .carte-visite[open] summary { border-bottom: 1px solid var(--papier-bord); }
 .carte-visite .ligne-bouton { background: var(--papier); }
 
-@media (max-height: 560px) {
-  .bouton-photo.flottant { width: 48px; height: 48px; }
-  .fil { padding-bottom: 68px; }
-}
 
 /* Blocages de validation et avis de mode sans lecture */
 .blocage ul { margin: var(--espace-2) 0 0; padding-left: 1.1em; }
@@ -480,8 +485,13 @@ button.ligne-bouton:hover { background: var(--creme); }
 
 /* Message de blocage : questions restantes nommées, une par ligne, avec [Vérifier] */
 .blocages { list-style: none; margin: var(--espace-2) 0 0; padding: 0; display: grid; gap: 2px; }
-.blocages li { display: flex; align-items: center; justify-content: space-between; gap: var(--espace-2); padding: 2px 0; border-bottom: 1px solid var(--papier-ligne); font-size: 14px; }
-.blocages li > span { min-width: 0; overflow-wrap: anywhere; }
+.blocages li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px var(--espace-2); padding: 4px 0; border-bottom: 1px solid var(--papier-ligne); font-size: 14px; }
+.blocages li > span { flex: 1 1 16rem; min-width: 0; overflow-wrap: break-word; }
+/* Téléphone : chaque élément sur toute la largeur, puis son bouton en dessous. */
+@media (max-width: 599px) {
+  .blocages li { flex-direction: column; align-items: flex-start; padding: 6px 0 8px; }
+  .blocages li > span { flex: none; width: 100%; }
+}
 .blocages-titre { margin-top: var(--espace-3) !important; font-weight: 700; }
 .blocages-suite summary { min-height: var(--cible); display: flex; align-items: center; cursor: pointer; font-size: 14px; color: var(--encre-secondaire); }
 .lien-bouton {
@@ -506,8 +516,6 @@ button.ligne-bouton:hover { background: var(--creme); }
 .filtre-dossier button[aria-checked='true'] { background: var(--encre); color: var(--papier); }
 .filtre-actif .ligne { background: #f7f1e3; box-shadow: inset 3px 0 0 var(--encre); }
 
-/* Bouton appareil photo flottant (plus de barre du bas) ; le fil garde un espace en bas pour ne rien masquer */
-.bouton-photo.flottant { position: absolute; right: var(--gouttiere); bottom: 12px; z-index: 5; width: 56px; height: 56px; }
 .conversation-chat { position: relative; }
 
 /* Zone de saisie fixée en bas, comme dans WhatsApp */
@@ -540,5 +548,5 @@ button.ligne-bouton:hover { background: var(--creme); }
 .renum-compte { margin: var(--espace-2) 0 0 !important; font-size: 14px; }
 .aide-bouton { flex-basis: 100%; margin-top: 2px; }
 .pied-tout-confirmer { flex: 1 1 220px; display: flex; flex-direction: column; gap: 2px; }
-.pied-tout-confirmer button { width: 100%; }
+.pied-tout-confirmer button { width: 100%; flex: none; }
 .pied-tout-confirmer .aide { font-size: 12px; }

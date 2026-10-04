@@ -131,3 +131,9 @@
 .barre-piste .barre { display: block; height: 100%; background: var(--encre); border-radius: 3px; }
 .barre-valeur { min-width: 5.5rem; text-align: end; font-weight: 600; }
 .note-masque { margin: var(--espace-2) 0 0; font-size: 12px; color: var(--encre-secondaire); }
+
+/* Vue du dossier : titre, reprise de la vérification, date postérieure à la photo */
+.vue-dossier-tete .titre-code { font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace; letter-spacing: 0.1em; }
+.vue-dossier-tete .bouton { align-self: flex-start; }
+.avertissement-date { display: block; margin-top: 2px; font-size: 12px; font-weight: 600; color: var(--encre); font-style: italic; }
+.avertissement-date::before { content: '⚠ '; font-style: normal; }

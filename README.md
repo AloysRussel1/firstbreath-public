@@ -7,6 +7,8 @@ reliées entre elles. Défi DayOne, CodeML 2026.
 Le registre papier reste la référence : l'application s'y greffe sans changer la pratique de la sage-femme.
 Elle lit la page, pose une question seulement quand elle doute, et la sage-femme tranche toujours.
 
+**Vidéo de démonstration : [lien à ajouter]**
+
 ## Données
 
 Ce dépôt ne contient **pas** les données du défi. Le registre synthétique (pages photographiées, PDF et CSV de
@@ -66,12 +68,17 @@ npm run dev            # http://localhost:5173
 Ouvrir `http://localhost:5173`, choisir « Commencer », un identifiant (par exemple `sf_01`) et le rôle
 Sage-femme.
 
+L'application a quatre onglets en bas de l'écran : **Messages** (la conversation de vérification), **Dossiers**
+(patientes, visites et vue détaillée d'un dossier), **Statistiques** (tableau de bord anonymisé) et **Réglages**.
+Le bouton rond de l'appareil photo, au centre de la barre, ramène à Messages et ouvre la prise de photo. Toute
+l'interface utilise une seule police, DM Sans ; Noto Naskh Arabic sert de repli pour l'écriture arabe.
+
 ### 3. Tests
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest -q backend\tests                                  # 35 tests
+.\.venv\Scripts\python.exe -m pytest -q backend\tests                                  # 47 tests
 .\.venv\Scripts\python.exe -B -m unittest discover -s evaluation -p "test_*.py"         # 42 tests
-cd frontend; npm run lint; npm run build
+cd frontend; npm run lint; npm test; npm run build                                     # npm test : 7 tests
 ```
 
 Sous macOS / Linux, remplacer `.\.venv\Scripts\python.exe` par `.venv/bin/python`. Les tests du backend forcent
@@ -95,6 +102,21 @@ $env:FIRSTBREATH_CORS_ORIGINS = "http://localhost:5173"
 $env:VITE_API_BASE_URL = "http://127.0.0.1:8001"; npm run dev
 ```
 
+### Remettre la démo à zéro
+
+```powershell
+# 1. Arrêter le serveur (Ctrl+C dans son terminal) : le script n'arrête aucun processus.
+.\scripts\reinitialiser_demo.ps1                       # demande de taper OUI avant de supprimer
+.\scripts\reinitialiser_demo.ps1 -Dossier D:\donnees   # autre dossier de stockage
+# 2. Relancer le serveur, puis dans l'application : Réglages > Effacer les données de l'appareil.
+```
+
+Le script supprime le stockage du backend : `backend/storage/` (base SQLite et photos reçues), ou le dossier de
+`FIRSTBREATH_DATA_DIR` s'il est défini dans l'environnement. Il ne lit pas `.env` : si la variable n'y est définie
+que là, passer le dossier avec `-Dossier`. Il refuse de toucher à `data/`, au cache de l'extraction
+(`extraction/cache/`, `evaluation/cache/`), à `.env`, au dépôt lui-même, et à tout dossier qui contient autre chose
+que la base et les photos. Le serveur recrée une base vide au démarrage suivant.
+
 Note Windows : si le contrôle intelligent des applications (Smart App Control) bloque une bibliothèque compilée
 fraîchement téléchargée (par exemple `scikit-learn`, utilisé seulement par les tests de calibration), les autres
 tests restent valables ; débloquer le fichier ou relancer depuis un dossier de confiance.
@@ -115,7 +137,7 @@ Téléphone : frontend/ (React)               Serveur du centre : backend/ (Fast
 | `shared/` | Schéma des 245 champs, statuts, contrat d'interface, validateur | [shared/README.md](shared/README.md) |
 | `extraction/` | Photo → objet structuré avec statut et confiance par champ | [extraction/README.md](extraction/README.md) |
 | `backend/` | API, cycle de vie, liaison patiente, synchronisation, tableau de bord | [backend/README.md](backend/README.md) |
-| `frontend/` | Application mobile : conversation, dossiers, tableau de bord, réglages | [frontend/README.md](frontend/README.md) |
+| `frontend/` | Application mobile : onglets Messages, Dossiers, Statistiques, Réglages | [frontend/README.md](frontend/README.md) |
 | `evaluation/` | Vérité terrain, scores, robustesse, calibration du seuil | [evaluation/README.md](evaluation/README.md) |
 | `docs/` | [Conformité aux consignes](docs/CONFORMITE.md) | |
 
@@ -125,7 +147,9 @@ Choix principaux :
   code normalise ensuite les valeurs et fixe les statuts selon `shared/CONVENTIONS.md`.
 - **Une conversation plutôt qu'un formulaire.** Une page compte jusqu'à 160 champs. La sage-femme ne voit que les
   doutes, une question à la fois, avec quatre réponses de même poids : Confirmer, Corriger, Vide sur le papier,
-  Reprendre la photo. Le détail complet est à un geste ; sur grand écran, il s'affiche à côté du fil.
+  Reprendre la photo. Le détail complet est à un geste ; sur grand écran, il s'affiche à côté du fil. Une
+  correction est convertie au format du champ avant l'envoi (« 15/01/2026 », « 11/7 » → « 110/70 », « 62,5 ») ;
+  une valeur invalide est signalée en français simple dans la zone de saisie.
 - **Statuts neutres, aucun triage.** Ni vert, ni jaune, ni rouge : la forme de l'icône et le libellé distinguent
   les statuts. Il n'y a ni diagnostic ni recommandation.
 - **Contre le biais d'automatisation.** Un doute ne se confirme jamais en bloc. La renumérisation garde l'existant
@@ -225,9 +249,11 @@ coûté 1,61 $ et 623 s. La référence du test est partielle : 619 champs annot
 | Valeurs fausses sans alerte au seuil 0,92 | **0,65 %** (4/619) |
 | Questions par page | 11,4 en moyenne ; médiane 3,5 ; jusqu'à 156 sur une page de grossesse |
 
-Les valeurs lues restent aussi justes qu'en développement. Les statuts « exacts » baissent parce que le seuil
-prudent de 0,92 envoie en question 224 champs que la référence donne « connus » : ce sont des questions de plus,
-pas des erreurs silencieuses.
+Les valeurs lues restent aussi justes qu'en développement. Le score des statuts est bas pour une raison connue :
+il compare le statut produit au statut de la référence, et le seuil prudent de 0,92 rend `A_REVISER` (donc pose
+une question sur) 224 champs que la référence donne `CONNU`, dont la valeur lue est le plus souvent juste. Ce
+sont des questions de plus, pas des erreurs silencieuses : la mesure qui compte pour la sécurité est la part de
+valeurs fausses passées sans question, 0,65 % (4/619), soit 4 sur les 342 champs non révisés (1,17 %).
 
 ### Développement (patientes 1 à 6, pages 1 à 48) et robustesse aux photos dégradées
 
@@ -267,8 +293,9 @@ figures sont dans `evaluation/figures/`.
   incertaine », « illisible »…). L'extraction ne transmet pas la raison précise par champ.
 - **Photos inclinées** : il n'y a pas de redressement automatique. Le contrôle sur l'appareil signale le flou
   et le manque de lumière, pas l'inclinaison.
-- **Clavier** : le maintien de la zone de saisie au-dessus du clavier virtuel n'a pas été testé sur un vrai
-  téléphone ; il a été vérifié dans un navigateur de bureau.
+- **Clavier** : le maintien de la zone de saisie au-dessus du clavier virtuel et le masquage de la barre d'onglets
+  quand le clavier s'ouvre n'ont pas été testés sur un vrai téléphone ; ils ont été vérifiés dans un navigateur
+  de bureau, à 360, 390 et 820 px.
 - **Authentification** : il n'y en a pas de réelle. Le rôle est déclaré dans le profil et envoyé dans un
   en-tête HTTP. La clé du coffre chiffré vit dans le navigateur.
 - **Hépatite** : le formulaire papier contient l'hépatite B (Ag HBs), et non l'hépatite C demandée par les
@@ -291,7 +318,8 @@ figures sont dans `evaluation/figures/`.
   |---|---|
   | `claude-sonnet-5` | Lecture des pages, sortie structurée par appel d'outil |
   | `claude-haiku-4-5` | Détection du type de page quand il est inconnu |
-  | `claude-opus-5-5` | Assistant de développement (Claude Code) pour l'interface, le backend, les tests et la documentation ; il n'intervient pas dans l'extraction |
+
+  Aucun autre modèle n'est appelé par l'application. Claude Code a servi d'assistant de développement.
 
 - **Logiciels** :
 
@@ -299,7 +327,7 @@ figures sont dans `evaluation/figures/`.
   |---|---|
   | Backend | Python, FastAPI, SQLite, Pillow |
   | Évaluation | scikit-learn, RapidFuzz, PyMuPDF, pdftotext |
-  | Interface | React 19, Vite, Dexie (IndexedDB), Web Crypto (AES-GCM) ; polices DM Sans, Playfair Display et Noto Naskh Arabic embarquées (OFL) |
+  | Interface | React 19, Vite, Dexie (IndexedDB), Web Crypto (AES-GCM) ; polices DM Sans (toute l'interface) et Noto Naskh Arabic (repli pour l'arabe) embarquées (OFL) |
   | Tests | pytest, unittest ; Playwright avec Microsoft Edge pour les parcours de bout en bout |
 
 - **Données** : registre synthétique fourni par les organisateurs du défi DayOne (`data/`, jamais modifié).

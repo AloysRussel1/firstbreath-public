@@ -63,9 +63,12 @@ export default {
   'apropos.limites.texte': 'Pas de diagnostic, pas de triage, pas de recommandation clinique. Les données de démonstration sont synthétiques.',
 
   // Navigation de l'application
-  'nav.conversation': 'Conversation',
+  'nav.conversation': 'Messages',
+  'titre.conversation': 'Conversation',
   'nav.dossiers': 'Dossiers',
-  'nav.tableau': 'Tableau de bord',
+  'nav.tableau': 'Statistiques',
+  'nav.principale': 'Navigation principale',
+  'nav.avecFile': ({ onglet, n }) => `${onglet}, ${n} ${n === 1 ? 'photo' : 'photos'} en attente`,
   'nav.reglages': 'Réglages',
   'nav.accueil': 'Retour à l’accueil',
 
@@ -159,6 +162,18 @@ export default {
   'editeur.systolique': 'Systolique',
   'editeur.diastolique': 'Diastolique',
   'editeur.marquerVide': 'Marquer « vide sur le papier »',
+  'editeur.formatDate': 'JJ/MM/AAAA',
+
+  // Erreurs de saisie (affichées dans la zone de saisie)
+  'erreurSaisie.date': 'Date attendue au format JJ/MM/AAAA',
+  'erreurSaisie.entier': 'Nombre entier attendu, par exemple 3',
+  'erreurSaisie.decimal': 'Nombre attendu, par exemple 38,5',
+  'erreurSaisie.tension': 'Tension attendue sous la forme 110/70 (ou 11/7)',
+  'erreurSaisie.choix': 'Choisissez une des réponses proposées',
+  'erreurSaisie.liste': 'Cochez seulement les cases proposées',
+  'erreurSaisie.booleen': 'Répondez par Oui ou Non',
+  'erreurSaisie.vide': 'Écrivez une valeur, ou marquez « vide sur le papier »',
+  'erreurSaisie.identifiant': 'Cette valeur ressemble à un téléphone ou une CIN : elle n’est pas enregistrée',
 
   // Valeurs
   'valeur.oui': 'Oui',
@@ -475,4 +490,12 @@ export default {
   'option.autreRegistre': 'Non, autre patiente : nouveau registre',
   'editeur.cochezAide': 'Cochez les cases cochées sur le registre.',
   'aide.toutConfirmer': 'Valide d’un coup les informations lues avec certitude. Les points à vérifier restent à traiter un par un.',
+
+  // Vue du dossier
+  'dossiers.titreCode': 'Patiente {code}',
+  'dossiers.titreDate': 'Dossier du {date} · {type}',
+  'dossiers.sansNumero': 'Sans N° de fiche',
+  'dossiers.reprendre': ({ n }) => (n === 0 ? 'Reprendre la vérification' : `Reprendre la vérification (${n} ${n === 1 ? 'question' : 'questions'})`),
+  'dossiers.datePosterieure': 'Date postérieure à la photo, à vérifier',
+  'reprise.message': 'Reprise de la vérification : {titre}. Je vous montre les questions restantes une par une.',
 }

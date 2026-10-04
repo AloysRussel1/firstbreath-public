@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useLangue } from '../i18n'
-import { definitionChamp, estDouteux, formaterValeur, infosVisite, libelleChamp, sectionDe } from '../lib/format'
+import { datePosterieure, definitionChamp, estDouteux, formaterValeur, infosVisite, libelleChamp, sectionDe } from '../lib/format'
 import EditeurValeur from './EditeurValeur'
 import StatutBadge from './StatutBadge'
 
@@ -28,9 +28,13 @@ function Edition({ champ, schema, occupe, onCorriger, onFermer }) {
         definition={definition}
         valeurInitiale={champ.valeur}
         onAnnuler={onFermer}
-        onValider={async (valeur) => { if (await onCorriger(champ, { valeur })) onFermer() }}
+        onValider={async (valeur) => {
+          const r = await onCorriger(champ, { valeur })
+          if (r?.ok) onFermer()
+          return r
+        }}
       />
-      <button type="button" className="lien-texte" disabled={occupe} onClick={async () => { if (await onCorriger(champ, { vide: true })) onFermer() }}>
+      <button type="button" className="lien-texte" disabled={occupe} onClick={async () => { if ((await onCorriger(champ, { vide: true }))?.ok) onFermer() }}>
         {t('editeur.marquerVide')}
       </button>
     </div>
@@ -38,7 +42,7 @@ function Edition({ champ, schema, occupe, onCorriger, onFermer }) {
 }
 
 // Ligne compacte « libellé : valeur » avec l'icône de statut ; un toucher ouvre la correction (si onCorriger).
-function LigneChamp({ champ, schema, seuil, occupe, onCorriger, onEditer, sansColonne = false }) {
+function LigneChamp({ champ, schema, seuil, occupe, onCorriger, onEditer, dateCapture, sansColonne = false }) {
   const { t, langue } = useLangue()
   const [ouvert, setOuvert] = useState(false)
   const definition = definitionChamp(schema, champ.champ)
@@ -47,7 +51,10 @@ function LigneChamp({ champ, schema, seuil, occupe, onCorriger, onEditer, sansCo
   const contenu = (
     <>
       <span className="ligne-libelle" dir="auto">{libelle}</span>
-      <span className="ligne-valeur" dir="auto">{formaterValeur(definition, champ.valeur, t)}</span>
+      <span className="ligne-valeur" dir="auto">
+        {formaterValeur(definition, champ.valeur, t)}
+        {datePosterieure(champ, dateCapture) && <small className="avertissement-date">{t('dossiers.datePosterieure')}</small>}
+      </span>
       <span className="ligne-statut"><IndicateurChamp champ={champ} /></span>
     </>
   )
@@ -65,7 +72,7 @@ function LigneChamp({ champ, schema, seuil, occupe, onCorriger, onEditer, sansCo
 
 // Visites : vrai tableau sur grand écran (une colonne par visite faite), cartes sur téléphone.
 // Les deux rendus existent ; une requête de conteneur choisit selon la largeur réellement disponible.
-function Visites({ champs, schema, seuil, occupe, onCorriger, onEditer }) {
+function Visites({ champs, schema, seuil, occupe, onCorriger, onEditer, dateCapture }) {
   const { t, langue } = useLangue()
   const [edition, setEdition] = useState(null)
   const parVisite = new Map()
@@ -103,7 +110,10 @@ function Visites({ champs, schema, seuil, occupe, onCorriger, onEditer }) {
                     const douteux = estDouteux(c, seuil)
                     const valeur = (
                       <>
-                        <span dir="auto">{formaterValeur(definitionChamp(schema, c.champ), c.valeur, t)}</span>
+                        <span dir="auto">
+                          {formaterValeur(definitionChamp(schema, c.champ), c.valeur, t)}
+                          {datePosterieure(c, dateCapture) && <small className="avertissement-date">{t('dossiers.datePosterieure')}</small>}
+                        </span>
                         {(c.statut !== 'CONNU' || c.confirme || c.source === 'manual') && <IndicateurChamp champ={c} />}
                       </>
                     )
@@ -142,7 +152,7 @@ function Visites({ champs, schema, seuil, occupe, onCorriger, onEditer }) {
                 <span>{formaterValeur({ type: 'date' }, cs.get('date_venue')?.valeur ?? null, t)}</span>
                 {douteux && <StatutBadge statut="A_REVISER" compact />}
               </summary>
-              <ul>{liste.map((c) => <LigneChamp key={c.champ} champ={c} schema={schema} seuil={seuil} occupe={occupe} onCorriger={onCorriger} onEditer={onEditer} sansColonne />)}</ul>
+              <ul>{liste.map((c) => <LigneChamp key={c.champ} champ={c} schema={schema} seuil={seuil} occupe={occupe} onCorriger={onCorriger} onEditer={onEditer} dateCapture={dateCapture} sansColonne />)}</ul>
             </details>
           )
         })}
@@ -154,7 +164,7 @@ function Visites({ champs, schema, seuil, occupe, onCorriger, onEditer }) {
 
 // Une page du dossier, par sections repliables (nombre de champs et de points à vérifier dans l'en-tête).
 // onCorriger(champ, page, changement) facultatif : sans lui, lecture seule.
-export default function SectionsPage({ page, schema, seuil, occupe, onCorriger, onEditer = null, entete = null, toutOuvert = false }) {
+export default function SectionsPage({ page, schema, seuil, occupe, onCorriger, onEditer = null, entete = null, toutOuvert = false, dateCapture = null }) {
   const { t } = useLangue()
   const sections = new Map()
   for (const c of page.champs) {
@@ -182,8 +192,8 @@ export default function SectionsPage({ page, schema, seuil, occupe, onCorriger, 
               </span>
             </summary>
             {nom === 'Visites'
-              ? <Visites champs={champs} schema={schema} seuil={seuil} occupe={occupe} onCorriger={corriger} onEditer={editer} />
-              : <ul className="lignes">{champs.map((c) => <LigneChamp key={c.champ} champ={c} schema={schema} seuil={seuil} occupe={occupe} onCorriger={corriger} onEditer={editer} />)}</ul>}
+              ? <Visites champs={champs} schema={schema} seuil={seuil} occupe={occupe} onCorriger={corriger} onEditer={editer} dateCapture={dateCapture} />
+              : <ul className="lignes">{champs.map((c) => <LigneChamp key={c.champ} champ={c} schema={schema} seuil={seuil} occupe={occupe} onCorriger={corriger} onEditer={editer} dateCapture={dateCapture} />)}</ul>}
           </details>
         )
       })}

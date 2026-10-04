@@ -35,8 +35,8 @@
 .vitrine-corps.etroit { display: flex; flex-direction: column; gap: var(--espace-4); }
 .hero { text-align: center; animation: arrivee 300ms var(--courbe) both; }
 .surtitre { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--encre-secondaire); }
-.accroche { margin: var(--espace-3) 0 var(--espace-2); font-size: 40px; line-height: 1.04; letter-spacing: -0.035em; }
-.accroche em { font-style: italic; color: var(--marque); }
+.accroche { margin: var(--espace-3) 0 var(--espace-2); font-size: 40px; font-weight: 700; line-height: 1.08; letter-spacing: -0.025em; }
+.accroche em { font-style: normal; color: var(--marque); }
 .intro { margin: var(--espace-3) auto 0; max-width: 420px; color: var(--encre); }
 .hero .intro { text-align: center; }
 .actions { display: flex; flex-direction: column; align-items: center; gap: var(--espace-3); margin-top: var(--espace-5); }
@@ -54,7 +54,7 @@
 .etapes-vitrine li span { display: flex; flex-direction: column; }
 .etapes-vitrine li b { font-size: 17px; }
 .etapes-vitrine li span span { color: var(--encre-secondaire); font-size: 15px; }
-.etape-numero { font-family: var(--police-titre); font-size: 26px; line-height: 1; color: var(--marque); min-width: 38px; }
+.etape-numero { font-family: var(--police-titre); font-size: 26px; font-weight: 700; line-height: 1; color: var(--marque); min-width: 38px; }
 .vitrine-pied { padding: var(--espace-4); text-align: center; font-size: 13px; color: var(--encre-secondaire); border-top: 1px solid var(--papier-bord); }
 
 /* Profil */

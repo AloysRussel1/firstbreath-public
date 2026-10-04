@@ -6,8 +6,9 @@ import SectionsPage from '../components/SectionsDossier'
 import { useConnexion } from '../etat/connexion'
 import { useConversation } from '../etat/conversation'
 import { useDonnees } from '../etat/donnees'
+import { naviguer } from '../etat/route'
 import { useLangue } from '../i18n'
-import { dateLisible } from '../lib/format'
+import { dateHeureLisible, dateLisible, estDouteux } from '../lib/format'
 import { panneCentraleSimulee } from '../lib/preferences'
 
 const ETATS_VALIDES = ['VALIDE', 'PATIENTE_LIEE', 'ENREGISTRE', 'SYNCHRONISE', 'ECHEC_SYNCHRONISATION']
@@ -119,7 +120,7 @@ function Liaison({ dossier, onLie }) {
 export default function VueDossier({ dossierId }) {
   const { t } = useLangue()
   const { connecte } = useConnexion()
-  const { schema, seuil } = useConversation()
+  const { schema, seuil, reprendreDossier } = useConversation()
   const charger = useCallback(async () => {
     const [dossier, historique] = await Promise.all([api.dossier(dossierId), api.historique(dossierId)])
     return { dossier, historique }
@@ -134,15 +135,36 @@ export default function VueDossier({ dossierId }) {
   const { dossier, historique } = donnees
   const pages = [...dossier.pages].sort((a, b) => a.page_no - b.page_no)
   const captureDe = (page) => [...(dossier.captures || [])].reverse().find((c) => c.page_no === page.page_no)
+  // Titre : code de liaison, sinon N° de fiche, sinon « Dossier du <date> · <type de la première page> ».
+  const dateDossier = dossier.captures?.[0]?.date_capture || dossier.historique_etats?.[0]?.date
+  const titre = dossier.patiente_code
+    ? t('dossiers.titreCode', { code: dossier.patiente_code })
+    : dossier.numero_fiche
+      ? t('dossiers.fiche', { numero: dossier.numero_fiche })
+      : t('dossiers.titreDate', { date: dateLisible(dateDossier), type: pages[0] ? t(`type.${pages[0].type_page}`) : '—' })
+  // Questions restantes : champs douteux, ou N° de fiche (obligatoire) pas encore sûr.
+  const requis = schema?.required_fields || ['identification.numero_fiche']
+  const sur = (c) => c.valeur !== null && c.valeur !== undefined && c.statut === 'CONNU' && (c.confiance >= seuil || c.confirme || c.source === 'manual')
+  const restantes = pages.flatMap((p) => p.champs).filter((c) => estDouteux(c, seuil) || (requis.includes(c.champ) && !sur(c))).length
+  const nonValide = !ETATS_VALIDES.includes(dossier.etat)
 
   return (
     <section className="ecran-contenu vue-dossier">
       {retour}
       {horsLigne && <p className="bandeau-hors-ligne" role="status">{t('dossiers.horsLigne')}</p>}
       <header className="carte-papier vue-dossier-tete">
-        {dossier.patiente_code && <span className="code-patiente">{dossier.patiente_code}</span>}
-        <h2 dir="auto">{dossier.numero_fiche ? t('dossiers.fiche', { numero: dossier.numero_fiche }) : t('dossiers.sansFiche')}</h2>
+        <h2 dir="auto" className={dossier.patiente_code ? 'titre-code' : ''}>{titre}</h2>
+        {dossier.patiente_code && dossier.numero_fiche && <small className="aide">{t('dossiers.fiche', { numero: dossier.numero_fiche })}</small>}
+        {!dossier.patiente_code && !dossier.numero_fiche && <small className="aide">{t('dossiers.sansNumero')}</small>}
         <p><span className="tampon">{t(`etat.${dossier.etat}`)}</span> <small>{t('dossiers.pages', { n: pages.length })}</small></p>
+        {nonValide && connecte && (
+          <button type="button" className="bouton bouton-navigation" onClick={() => {
+            if (reprendreDossier(dossier)) naviguer('/app/conversation')
+            else window.alert(t('conv.nouveauRegistreFile'))
+          }}>
+            {t('dossiers.reprendre', { n: restantes })}
+          </button>
+        )}
       </header>
 
       {!dossier.patiente_id && ETATS_VALIDES.includes(dossier.etat) && connecte && (
@@ -162,7 +184,8 @@ export default function VueDossier({ dossierId }) {
 
       {pages.map((page) => (
         <div key={page.page_no} className="carte-papier vue-page">
-          <SectionsPage page={page} schema={schema} seuil={seuil} occupe entete={<PhotoOrigine capture={captureDe(page)} />} />
+          <SectionsPage page={page} schema={schema} seuil={seuil} occupe entete={<PhotoOrigine capture={captureDe(page)} />}
+            dateCapture={captureDe(page)?.date_capture} />
         </div>
       ))}
 
@@ -172,7 +195,7 @@ export default function VueDossier({ dossierId }) {
           <ol>
             {historique.transitions.map((h, i) => (
               <li key={i}>
-                <span>{dateLisible(h.changed_at)}</span>
+                <span>{dateHeureLisible(h.changed_at)}</span>
                 <span>{t(`etat.${h.from_state}`)} → <b>{t(`etat.${h.to_state}`)}</b></span>
                 <small>{h.actor_id}</small>
               </li>

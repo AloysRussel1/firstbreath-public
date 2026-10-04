@@ -36,7 +36,7 @@ changer la pratique de la sage-femme : le papier reste la référence, le numér
   captures idempotentes, une liaison patiente et une synchronisation simulée.
 - **Interface** : React et Vite, un coffre chiffré dans le navigateur (IndexedDB et AES-GCM), un contrôle de la
   qualité de la photo sur l'appareil, une interface bilingue français/anglais.
-- **Outils** : Claude Code (`claude-opus-5-5`) a servi d'assistant de développement ; Playwright avec Edge pour
+- **Outils** : Claude Code a servi d'assistant de développement ; Playwright avec Edge pour
   les parcours de bout en bout.
 
 ### Défis rencontrés
@@ -105,7 +105,7 @@ stays the reference, the digital layer sits on top of it.
   captures, patient linking and simulated synchronisation.
 - **Frontend** : React and Vite, an encrypted in-browser vault (IndexedDB and AES-GCM), an on-device photo quality
   check, a bilingual French/English interface.
-- **Tools** : Claude Code (`claude-opus-5-5`) was our development assistant; Playwright with Edge ran the
+- **Tools** : Claude Code was our development assistant; Playwright with Edge ran the
   end-to-end journeys.
 
 ### Challenges

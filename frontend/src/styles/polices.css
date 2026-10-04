@@ -1,8 +1,9 @@
 /* Polices embarquées dans le projet (licence OFL) : l'appli garde son apparence hors ligne.
-   Sous-ensembles latin et latin-ext (DM Sans, Playfair) et arabe (Noto Naskh Arabic, limité aux caractères
+   Une seule police pour toute l'interface, titres compris : DM Sans (latin et latin-ext) ; Noto Naskh Arabic en repli
+   pour l'écriture arabe (Noto Naskh Arabic, limité aux caractères
    arabes par unicode-range) : les valeurs écrites en arabe s'affichent correctement, même sans internet. */
 
-/* DM Sans : texte courant */
+/* DM Sans : texte et titres (hiérarchie par la taille et la graisse) */
 @import '@fontsource/dm-sans/latin-400.css';
 @import '@fontsource/dm-sans/latin-ext-400.css';
 @import '@fontsource/dm-sans/latin-500.css';
@@ -11,14 +12,6 @@
 @import '@fontsource/dm-sans/latin-ext-600.css';
 @import '@fontsource/dm-sans/latin-700.css';
 @import '@fontsource/dm-sans/latin-ext-700.css';
-
-/* Playfair Display : titres et chiffres clés */
-@import '@fontsource/playfair-display/latin-500.css';
-@import '@fontsource/playfair-display/latin-ext-500.css';
-@import '@fontsource/playfair-display/latin-500-italic.css';
-@import '@fontsource/playfair-display/latin-ext-500-italic.css';
-@import '@fontsource/playfair-display/latin-600.css';
-@import '@fontsource/playfair-display/latin-ext-600.css';
 
 /* Noto Naskh Arabic : écriture arabe (valeurs recopiées du registre, pages multilingues) */
 @import '@fontsource/noto-naskh-arabic/arabic-400.css';

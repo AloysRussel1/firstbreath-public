@@ -65,7 +65,7 @@ Détails et commandes de lancement : GUIDE_EQUIPE.md (« Prérequis et lancement
   CSS simple, URL de l'API dans `import.meta.env.VITE_API_URL`, tous les appels dans `src/api.js`.
 - backend/ : FastAPI, uvicorn, python-multipart, pydantic ; SQLite (`sqlite3`, `backend/stockage/firstbreath.db`),
   images dans `backend/stockage/images/`, sha256 via `hashlib`, `uuid4`, validation par `shared/valider.py`.
-- extraction/ : SDK `anthropic`, modèle `claude-sonnet-5` par défaut, `claude-opus-5-5` pour les pages difficiles ;
+- extraction/ : SDK `anthropic`, modèle `claude-sonnet-5` pour la lecture, `claude-haiku-4-5` pour la détection du type de page ;
   sortie JSON par tool use ; python-dotenv, Pillow, hashlib. Uniquement des données synthétiques envoyées à l'API.
 - evaluation/ : PyMuPDF (couche texte du PDF), pandas, matplotlib, scikit-learn (calibration_curve), rapidfuzz.
 - Dépendances Python par dossier : `backend/`, `extraction/`, `evaluation/` ont chacun leur `requirements.txt`.
