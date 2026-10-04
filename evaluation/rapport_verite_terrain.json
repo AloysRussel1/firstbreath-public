@@ -1,0 +1,2581 @@
+{
+  "source_pdf": "dossiers_specimen_10_patientes.pdf",
+  "source_sha256": "2797a99aee490ee255ee8f6487b7d20804175df216724098289d7033d78d22fb",
+  "pages": 80,
+  "specimens": 10,
+  "champs_extraits": 2089,
+  "champs_a_verifier": 361,
+  "pages_par_type": {
+    "IDENTIFICATION": 10,
+    "ANTECEDENTS": 10,
+    "GROSSESSE_ACTUELLE": 10,
+    "ACCOUCHEMENT": 10,
+    "PP_PRECOCE_MERE": 10,
+    "PP_PRECOCE_NOUVEAU_NE": 10,
+    "PP_TARDIF_MERE": 10,
+    "PP_TARDIF_NOUVEAU_NE": 10
+  },
+  "champs_annotes": 391,
+  "visites_vides_non_applicables_dev": {
+    "3": [
+      0,
+      2,
+      3
+    ],
+    "11": [
+      2,
+      8
+    ],
+    "19": [
+      1,
+      2,
+      6
+    ],
+    "27": [
+      1,
+      2,
+      8
+    ],
+    "35": [
+      0,
+      1,
+      2,
+      7
+    ],
+    "43": [
+      2,
+      7,
+      8
+    ]
+  },
+  "methode": "pdftotext UTF-8 raw + layout et annotations visuelles persistantes ; texte brut non enregistré",
+  "a_verifier": [
+    {
+      "page_source": 50,
+      "specimen_no": 7,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.medicaux",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 50,
+      "specimen_no": 7,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.chirurgicaux",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 50,
+      "specimen_no": 7,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.gynecologiques",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 50,
+      "specimen_no": 7,
+      "type_page": "ANTECEDENTS",
+      "champ": "obstetrique.accouchements_anterieurs",
+      "raison": "Tableau présent ; structure des objets à convenir et alignement à vérifier."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.tests.hepatite_c",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 51,
+      "specimen_no": 7,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 52,
+      "specimen_no": 7,
+      "type_page": "ACCOUCHEMENT",
+      "champ": "nouveau_ne.anomalie",
+      "raison": "Bloqué : le validateur commun détecte nom dans anomalie (faux positif). Correction shared/ à discuter en équipe."
+    },
+    {
+      "page_source": 54,
+      "specimen_no": 7,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "champ": "pp_precoce.nouveau_ne.signes_danger",
+      "raison": "Cases vides et mention Néant dans Autres : convenir du codage de cette absence pour liste_choix (RAS incompatible)."
+    },
+    {
+      "page_source": 54,
+      "specimen_no": 7,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "champ": "pp_precoce.nouveau_ne.vaccins_du_jour",
+      "raison": "Annotation visuelle conservée dans OBSERVATIONS_BLOQUEES.md ; faux positif cin dans vaccins du validateur commun."
+    },
+    {
+      "page_source": 56,
+      "specimen_no": 7,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "champ": "pp_tardif.nouveau_ne.signes_danger",
+      "raison": "Cases vides et mention Néant dans Autres : convenir du codage de cette absence pour liste_choix (RAS incompatible)."
+    },
+    {
+      "page_source": 56,
+      "specimen_no": 7,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "champ": "pp_tardif.nouveau_ne.vaccins_du_jour",
+      "raison": "Annotation visuelle conservée dans OBSERVATIONS_BLOQUEES.md ; faux positif cin dans vaccins du validateur commun."
+    },
+    {
+      "page_source": 58,
+      "specimen_no": 8,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.medicaux",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 58,
+      "specimen_no": 8,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.chirurgicaux",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 58,
+      "specimen_no": 8,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.gynecologiques",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 58,
+      "specimen_no": 8,
+      "type_page": "ANTECEDENTS",
+      "champ": "obstetrique.accouchements_anterieurs",
+      "raison": "Tableau présent ; structure des objets à convenir et alignement à vérifier."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.tests.hepatite_c",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 59,
+      "specimen_no": 8,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 60,
+      "specimen_no": 8,
+      "type_page": "ACCOUCHEMENT",
+      "champ": "nouveau_ne.anomalie",
+      "raison": "Bloqué : le validateur commun détecte nom dans anomalie (faux positif). Correction shared/ à discuter en équipe."
+    },
+    {
+      "page_source": 62,
+      "specimen_no": 8,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "champ": "pp_precoce.nouveau_ne.signes_danger",
+      "raison": "Cases vides et mention Néant dans Autres : convenir du codage de cette absence pour liste_choix (RAS incompatible)."
+    },
+    {
+      "page_source": 62,
+      "specimen_no": 8,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "champ": "pp_precoce.nouveau_ne.vaccins_du_jour",
+      "raison": "Annotation visuelle conservée dans OBSERVATIONS_BLOQUEES.md ; faux positif cin dans vaccins du validateur commun."
+    },
+    {
+      "page_source": 64,
+      "specimen_no": 8,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "champ": "pp_tardif.nouveau_ne.signes_danger",
+      "raison": "Cases vides et mention Néant dans Autres : convenir du codage de cette absence pour liste_choix (RAS incompatible)."
+    },
+    {
+      "page_source": 64,
+      "specimen_no": 8,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "champ": "pp_tardif.nouveau_ne.vaccins_du_jour",
+      "raison": "Annotation visuelle conservée dans OBSERVATIONS_BLOQUEES.md ; faux positif cin dans vaccins du validateur commun."
+    },
+    {
+      "page_source": 65,
+      "specimen_no": 9,
+      "type_page": "IDENTIFICATION",
+      "champ": "identification.region",
+      "raison": "Glyphes manquants dans la couche texte ; vérifier sur l’image sans deviner."
+    },
+    {
+      "page_source": 66,
+      "specimen_no": 9,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.medicaux",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 66,
+      "specimen_no": 9,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.chirurgicaux",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 66,
+      "specimen_no": 9,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.gynecologiques",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 66,
+      "specimen_no": 9,
+      "type_page": "ANTECEDENTS",
+      "champ": "obstetrique.accouchements_anterieurs",
+      "raison": "Tableau présent ; structure des objets à convenir et alignement à vérifier."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.tests.hepatite_c",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[0].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[3].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 67,
+      "specimen_no": 9,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 68,
+      "specimen_no": 9,
+      "type_page": "ACCOUCHEMENT",
+      "champ": "accouchement.indication_cesarienne",
+      "raison": "Glyphes manquants dans la couche texte ; vérifier sur l’image sans deviner."
+    },
+    {
+      "page_source": 68,
+      "specimen_no": 9,
+      "type_page": "ACCOUCHEMENT",
+      "champ": "nouveau_ne.anomalie",
+      "raison": "Bloqué : le validateur commun détecte nom dans anomalie (faux positif). Correction shared/ à discuter en équipe."
+    },
+    {
+      "page_source": 69,
+      "specimen_no": 9,
+      "type_page": "PP_PRECOCE_MERE",
+      "champ": "pp_precoce.mere.complications",
+      "raison": "Présence de complication cochée, mais aucun type coché ; demander une clarification."
+    },
+    {
+      "page_source": 70,
+      "specimen_no": 9,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "champ": "pp_precoce.nouveau_ne.signes_danger",
+      "raison": "Cases vides et mention Néant dans Autres : convenir du codage de cette absence pour liste_choix (RAS incompatible)."
+    },
+    {
+      "page_source": 70,
+      "specimen_no": 9,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "champ": "pp_precoce.nouveau_ne.vaccins_du_jour",
+      "raison": "Annotation visuelle conservée dans OBSERVATIONS_BLOQUEES.md ; faux positif cin dans vaccins du validateur commun."
+    },
+    {
+      "page_source": 72,
+      "specimen_no": 9,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "champ": "pp_tardif.nouveau_ne.signes_danger",
+      "raison": "Cases vides et mention Néant dans Autres : convenir du codage de cette absence pour liste_choix (RAS incompatible)."
+    },
+    {
+      "page_source": 72,
+      "specimen_no": 9,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "champ": "pp_tardif.nouveau_ne.vaccins_du_jour",
+      "raison": "Annotation visuelle conservée dans OBSERVATIONS_BLOQUEES.md ; faux positif cin dans vaccins du validateur commun."
+    },
+    {
+      "page_source": 74,
+      "specimen_no": 10,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.medicaux",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 74,
+      "specimen_no": 10,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.chirurgicaux",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 74,
+      "specimen_no": 10,
+      "type_page": "ANTECEDENTS",
+      "champ": "antecedents.femme.gynecologiques",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 74,
+      "specimen_no": 10,
+      "type_page": "ANTECEDENTS",
+      "champ": "obstetrique.accouchements_anterieurs",
+      "raison": "Tableau présent ; structure des objets à convenir et alignement à vérifier."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.tests.hepatite_c",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[1].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[2].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[4].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[5].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[6].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[7].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].date_rdv",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].date_venue",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].relance",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].age_gestationnel_sa",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].poids_kg",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].tension",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].oedemes",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].mouvements_actifs",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].hauteur_uterine_cm",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].bcf",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].col",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].presentation",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].glucosurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].albuminurie",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].hemoglobine_g_dl",
+      "raison": "Valeur absente ou alignement/glyphes ambigus ; vérifier visuellement."
+    },
+    {
+      "page_source": 75,
+      "specimen_no": 10,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "champ": "grossesse.visites[8].examine_par_fonction",
+      "raison": "Case cochée à lire visuellement."
+    },
+    {
+      "page_source": 76,
+      "specimen_no": 10,
+      "type_page": "ACCOUCHEMENT",
+      "champ": "nouveau_ne.anomalie",
+      "raison": "Bloqué : le validateur commun détecte nom dans anomalie (faux positif). Correction shared/ à discuter en équipe."
+    },
+    {
+      "page_source": 78,
+      "specimen_no": 10,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "champ": "pp_precoce.nouveau_ne.signes_danger",
+      "raison": "Cases vides et mention Néant dans Autres : convenir du codage de cette absence pour liste_choix (RAS incompatible)."
+    },
+    {
+      "page_source": 78,
+      "specimen_no": 10,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "champ": "pp_precoce.nouveau_ne.vaccins_du_jour",
+      "raison": "Annotation visuelle conservée dans OBSERVATIONS_BLOQUEES.md ; faux positif cin dans vaccins du validateur commun."
+    },
+    {
+      "page_source": 80,
+      "specimen_no": 10,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "champ": "pp_tardif.nouveau_ne.signes_danger",
+      "raison": "Cases vides et mention Néant dans Autres : convenir du codage de cette absence pour liste_choix (RAS incompatible)."
+    },
+    {
+      "page_source": 80,
+      "specimen_no": 10,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "champ": "pp_tardif.nouveau_ne.vaccins_du_jour",
+      "raison": "Annotation visuelle conservée dans OBSERVATIONS_BLOQUEES.md ; faux positif cin dans vaccins du validateur commun."
+    }
+  ]
+}

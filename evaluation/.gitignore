@@ -1,0 +1,6 @@
+apercus/
+__pycache__/
+cache/
+resultats*/
+.env
+degradees/

@@ -1,0 +1,119 @@
+{
+ "variante": "sombre",
+ "page_pdf": 9,
+ "patiente": 2,
+ "type_page": "IDENTIFICATION",
+ "image_sha256": "be062002b791c5bbf9026a629271530aa0963e8f060b0dcaf44cfee5257fbc36",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "identification-v1",
+ "ratio_reflexion": 0.99,
+ "champs": [
+  {
+   "champ": "identification.numero_fiche",
+   "valeur": "2026-416-002",
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.99,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.region",
+   "valeur": "Fès-Meknès",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.99,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.province",
+   "valeur": "Meknès",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.99,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.etablissement",
+   "valeur": "CSC Hay Salam",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.99,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.type_etablissement",
+   "valeur": "CSC",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.99,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.mode_couverture",
+   "valeur": "FIXE",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.99,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.grossesse_a_risque",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.99,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.types_risque",
+   "valeur": [
+    "HTA"
+   ],
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.99,
+    "raison": null
+   }
+  }
+ ]
+}

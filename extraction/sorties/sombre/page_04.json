@@ -1,0 +1,169 @@
+{
+ "variante": "sombre",
+ "page_pdf": 4,
+ "patiente": 1,
+ "type_page": "ACCOUCHEMENT",
+ "image_sha256": "c7b8a8bf310c6869d8ba9698f957161bb71d66a3e106d9373c690e278755992d",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "accouchement-v1",
+ "ratio_reflexion": 1.76,
+ "champs": [
+  {
+   "champ": "accouchement.lieu",
+   "valeur": "MATERNITE",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "accouchement.date",
+   "valeur": "2026-02-03",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "accouchement.mode",
+   "valeur": "VOIE_BASSE",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "accouchement.episiotomie",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "accouchement.indication_cesarienne",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "accouchement.complications",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "nouveau_ne.etat",
+   "valeur": "VIVANT",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "nouveau_ne.sexe",
+   "valeur": "F",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "nouveau_ne.poids_naissance_g",
+   "valeur": 3587,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "nouveau_ne.perimetre_cranien_cm",
+   "valeur": 34.0,
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "nouveau_ne.anomalie",
+   "valeur": "RAS",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  },
+  {
+   "champ": "nouveau_ne.age_gestationnel_sa",
+   "valeur": 40,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.76,
+    "raison": null
+   }
+  }
+ ]
+}

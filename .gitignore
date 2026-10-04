@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+.venv/
+.env
+*.pyc
+data/
+evaluation/resultats/
+backend/stockage/
+backend/storage/

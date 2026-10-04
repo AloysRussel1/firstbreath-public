@@ -1,0 +1,84 @@
+/* Système de design FirstBreath — inspiré de la première page (crème, bleu-vert, Playfair / DM Sans).
+
+   Règles :
+   - le bleu-vert de marque est réservé à l'en-tête, au logo, au bouton appareil photo et aux actions
+     de navigation ; il n'exprime JAMAIS une confiance ni un statut ;
+   - les 6 statuts de champ restent neutres (encre et gris, icônes et motifs), sans vert / jaune / rouge ;
+   - --encre-secondaire ne sert qu'aux informations secondaires, jamais à une valeur lue ni à une question ;
+   - contrastes pensés pour une lecture en faible luminosité : tout texte au moins AA (4,5:1),
+     texte principal AAA (encre sur crème 11,3:1), texte de l'en-tête 6,4:1. */
+
+:root {
+  /* Couleurs de fond */
+  --creme: #f6f4ee;            /* fond de l'appli */
+  --papier: #fffdf7;           /* bulles de l'agent, cartes de données */
+  --papier-bord: #e6dfcf;      /* bordure beige du papier */
+  --papier-ligne: #ece6d8;     /* quadrillage et lignes du registre */
+  --sable: #e9e2d3;            /* bulles de la sage-femme */
+  --sable-fonce: #d9cfba;
+
+  /* Encre */
+  --encre: #16393d;            /* texte principal, valeurs lues, questions (11,3:1 sur crème, 9,7:1 sur sable) */
+  --encre-secondaire: #4f6662; /* informations secondaires seulement (5,6:1 sur crème, 6,1:1 sur papier) */
+  --encre-discrete: #5a6e69;   /* numéros de question, tampons ; un peu plus sombre que l'ancien #647974
+                                  (4,2:1, insuffisant) : 4,9:1 sur crème, 5,3:1 sur papier ; jamais sur sable */
+
+  /* Marque (navigation uniquement) */
+  --marque: #0e6461;
+  --marque-fonce: #0a4d4b;
+  --marque-texte: #f2f7f3;
+  --marque-halo: rgba(14, 100, 97, 0.18);
+
+  /* Pastilles de connexion (information, pas statut de champ) */
+  --en-ligne: #cfe6dc;
+  --hors-ligne: #f3dcc4;
+  --hors-ligne-encre: #6b3f1d;
+
+  /* Typographie */
+  --police-texte: 'DM Sans', 'Noto Naskh Arabic', Tahoma, system-ui, sans-serif;
+  --police-titre: 'Playfair Display', Georgia, 'Noto Naskh Arabic', serif;
+  --taille-petite: 13px;       /* informations secondaires */
+  --taille-texte: 15px;        /* texte courant et bulles */
+  --taille-valeur: 15px;       /* valeurs lues, en semi-gras */
+  --taille-titre: 20px;        /* titres Playfair modérés (18 à 20 px) */
+
+  /* Formes : coins doux, coin de départ presque droit (rappel du logo) */
+  --rayon: 16px;
+  --rayon-depart: 4px;
+  --rayon-petit: 10px;
+  --rayon-pilule: 999px;
+
+  /* Ombres longues et douces, comme sous la feuille de l'ancienne page */
+  --ombre-papier: 0 1px 0 rgba(22, 57, 61, 0.04), 0 6px 18px rgba(36, 92, 75, 0.08);
+  --ombre-carte: 0 2px 0 rgba(22, 57, 61, 0.05), 0 14px 34px rgba(36, 92, 75, 0.12);
+  --ombre-bouton: 0 8px 22px rgba(14, 100, 97, 0.35);
+
+  /* Espacements */
+  --espace-1: 4px;
+  --espace-2: 8px;
+  --espace-3: 12px;
+  --espace-4: 16px;
+  --espace-5: 24px;
+  --espace-6: 32px;
+
+  /* Cibles tactiles */
+  --cible: 44px;               /* cible tactile minimale */
+  --cible-grande: 48px;
+
+  /* Mouvement */
+  --duree-courte: 160ms;
+  --duree: 240ms;
+  --courbe: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Texture discrète du papier du registre (quadrillage très léger) */
+  --texture-papier:
+    linear-gradient(var(--papier-ligne) 1px, transparent 1px) 0 0 / 100% 28px,
+    linear-gradient(90deg, rgba(236, 230, 216, 0.55) 1px, transparent 1px) 0 0 / 28px 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duree-courte: 0ms;
+    --duree: 0ms;
+  }
+}

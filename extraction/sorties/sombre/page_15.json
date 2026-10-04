@@ -1,0 +1,145 @@
+{
+ "variante": "sombre",
+ "page_pdf": 15,
+ "patiente": 2,
+ "type_page": "PP_TARDIF_MERE",
+ "image_sha256": "b5c74511219cc11e2e296ce0aebd99e7cf73178ece791a892d52a170a98cc850",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "pp-mere-v1",
+ "ratio_reflexion": 0.95,
+ "champs": [
+  {
+   "champ": "pp_tardif.mere.date_consultation",
+   "valeur": "2026-07-05",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_tardif.mere.temperature_c",
+   "valeur": 36.8,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_tardif.mere.tension",
+   "valeur": "114/70",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_tardif.mere.pouls",
+   "valeur": 76,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_tardif.mere.poids_kg",
+   "valeur": 78.0,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_tardif.mere.conjonctives",
+   "valeur": "NORMALES",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_tardif.mere.complications",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_tardif.mere.traitement",
+   "valeur": [
+    "FER"
+   ],
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_tardif.mere.prochain_rdv",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_tardif.mere.planification_familiale",
+   "valeur": "PILULE",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  }
+ ]
+}

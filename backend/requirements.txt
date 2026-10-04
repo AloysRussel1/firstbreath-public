@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+# extract_page() est importée depuis extraction/ : ses dépendances (alignées sur extraction/requirements.txt)
+anthropic
+python-dotenv
+pillow==12.3.0
+-r ../extraction/requirements.txt
+# Tests du backend (httpx : requis par fastapi.testclient)
+pytest
+httpx
+# sqlite3, hashlib et uuid font partie de la bibliothèque standard

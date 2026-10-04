@@ -1,0 +1,25 @@
+{
+ "description": "Réflexion médiane d'une page propre (dev) par type ; généré par extraction/sorties.py",
+ "cars_par_jeton": 1.81,
+ "lectures_mesurees": 4,
+ "par_type": {
+  "ACCOUCHEMENT": 830,
+  "ANTECEDENTS": 985,
+  "GROSSESSE_ACTUELLE": 2573,
+  "IDENTIFICATION": 170,
+  "PP_PRECOCE_MERE": 782,
+  "PP_PRECOCE_NOUVEAU_NE": 792,
+  "PP_TARDIF_MERE": 832,
+  "PP_TARDIF_NOUVEAU_NE": 389
+ },
+ "pages_par_type": {
+  "ACCOUCHEMENT": 6,
+  "ANTECEDENTS": 6,
+  "GROSSESSE_ACTUELLE": 6,
+  "IDENTIFICATION": 6,
+  "PP_PRECOCE_MERE": 6,
+  "PP_PRECOCE_NOUVEAU_NE": 6,
+  "PP_TARDIF_MERE": 6,
+  "PP_TARDIF_NOUVEAU_NE": 6
+ }
+}

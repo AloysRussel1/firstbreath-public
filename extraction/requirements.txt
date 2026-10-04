@@ -1,0 +1,5 @@
+anthropic
+python-dotenv
+# Version fixée : degrader.py doit produire exactement les mêmes images (mêmes sha256) chez toute l'équipe
+pillow==12.3.0
+# hashlib fait partie de la bibliothèque standard

@@ -1,0 +1,211 @@
+/* Base commune : remise à zéro, boutons, champs, cartes papier, illustration, statuts.
+   Variables dans theme.css. */
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--creme);
+  color: var(--encre);
+  font-family: var(--police-texte);
+  font-size: var(--taille-texte);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+button, input, select, textarea { font: inherit; color: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
+a { color: var(--encre); }
+button:focus-visible, input:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visible {
+  outline: 3px solid var(--marque);
+  outline-offset: 2px;
+}
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+h1, h2, h3 { font-family: var(--police-titre); font-weight: 500; letter-spacing: -0.02em; margin: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Boutons ---------- */
+.bouton {
+  min-height: var(--cible);
+  padding: 0 var(--espace-5);
+  border-radius: var(--rayon-pilule);
+  border: 1.5px solid var(--encre);
+  background: var(--papier);
+  color: var(--encre);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espace-2);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--duree-courte), transform var(--duree-courte);
+}
+.bouton:hover { background: var(--creme); }
+.bouton:active { transform: scale(0.98); }
+/* Navigation principale : seul usage du bleu-vert pour un bouton (avec l'appareil photo). */
+.bouton-navigation { background: var(--marque); border-color: var(--marque); color: var(--marque-texte); }
+.bouton-navigation:hover { background: var(--marque-fonce); }
+.bouton-large { width: 100%; min-height: var(--cible-grande); font-size: 15px; }
+.lien-texte {
+  min-height: var(--cible);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espace-2);
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--encre);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+/* ---------- Champs de formulaire ---------- */
+.champ-formulaire { display: flex; flex-direction: column; gap: var(--espace-1); }
+.champ-formulaire label { font-weight: 700; }
+.champ-formulaire input {
+  min-height: var(--cible-grande);
+  padding: 0 var(--espace-4);
+  border: 1.5px solid var(--papier-bord);
+  border-radius: var(--rayon-petit);
+  background: #fff;
+  font-size: var(--taille-valeur);
+}
+.aide { color: var(--encre-secondaire); font-size: var(--taille-petite); margin: 0; }
+.erreur { color: var(--hors-ligne-encre); font-weight: 700; font-size: var(--taille-petite); margin: 0; }
+
+/* ---------- Carte papier (rappel du registre) ---------- */
+.carte-papier {
+  position: relative;
+  background: var(--papier);
+  background-image: var(--texture-papier);
+  border: 1px solid var(--papier-bord);
+  border-radius: var(--rayon-depart) var(--rayon) var(--rayon) var(--rayon);
+  box-shadow: var(--ombre-carte);
+  padding: var(--espace-3) var(--espace-3) var(--espace-3) calc(var(--espace-3) + 10px);
+}
+.carte-papier::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--sable-fonce);
+}
+
+/* Tampon « Page N » / « FB / 01 » */
+.tampon {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1.5px solid currentColor;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--encre);
+  background: rgba(255, 253, 247, 0.92);
+  transform: rotate(-4deg);
+}
+
+/* ---------- Logo et sélecteur de langue ---------- */
+.logo {
+  flex: none;
+  display: grid;
+  place-items: center;
+  background: var(--marque);
+  color: var(--marque-texte);
+  border-radius: 12px 12px 12px 3px;
+}
+.selecteur-langue { display: inline-flex; border: 1.5px solid var(--encre); border-radius: var(--rayon-pilule); overflow: hidden; }
+.selecteur-langue button {
+  min-height: 40px;
+  min-width: 48px;
+  border: 0;
+  background: transparent;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+.selecteur-langue button[aria-pressed='true'] { background: var(--encre); color: var(--papier); }
+.sur-marque .selecteur-langue { border-color: var(--marque-texte); }
+.sur-marque .selecteur-langue button { color: var(--marque-texte); }
+.sur-marque .selecteur-langue button[aria-pressed='true'] { background: var(--marque-texte); color: var(--marque); }
+
+/* ---------- Illustration : feuille du registre inclinée, tampon, trait de scan ---------- */
+.illustration { position: relative; height: 240px; display: grid; place-items: center; }
+.illustration.petite { height: 190px; transform: scale(0.82); }
+.orbite { position: absolute; border: 1px solid var(--papier-bord); border-radius: 50%; width: 220px; height: 220px; }
+.orbite-2 { width: 280px; height: 172px; transform: rotate(-31deg); border-color: var(--papier-ligne); }
+.feuille {
+  position: relative;
+  width: 154px;
+  height: 200px;
+  padding: 20px 16px;
+  background: var(--papier);
+  border: 1px solid var(--papier-bord);
+  box-shadow: 0 22px 50px rgba(36, 92, 75, 0.16);
+  transform: rotate(5deg);
+  overflow: hidden;
+  text-align: left;
+}
+.feuille-haut { display: flex; justify-content: space-between; align-items: center; font-size: 8px; letter-spacing: 0.12em; color: var(--marque); }
+.feuille-haut span { font-size: 6px; color: var(--encre-discrete); }
+.feuille-ligne { display: block; height: 1px; width: 66%; margin-top: 15px; background: var(--papier-ligne); }
+.feuille-ligne.longue { width: 100%; margin-top: 18px; }
+.feuille-cases { display: flex; gap: 8px; margin-top: 16px; }
+.feuille-cases i { width: 26px; height: 22px; border: 1px solid var(--papier-ligne); }
+.feuille-scan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  height: 2px;
+  background: var(--marque);
+  box-shadow: 0 0 12px var(--marque-halo), 0 0 4px var(--marque);
+  opacity: 0.85;
+  animation: scan 3.2s var(--courbe) infinite alternate;
+}
+.feuille-tampon { position: absolute; right: 12px; bottom: 10px; font-size: 7px; letter-spacing: 0.12em; color: var(--encre-discrete); }
+
+/* ---------- Statuts : neutres, distincts par l'icône et le motif ---------- */
+.statut {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 10px 2px 3px;
+  border-radius: var(--rayon-pilule);
+  background: var(--creme);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.statut-icone { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 13px; }
+.st-connu .statut-icone { background: var(--encre); color: var(--papier); border: 2px solid var(--encre); }
+.st-a-reviser { font-weight: 700; }
+.st-a-reviser .statut-icone { background: var(--papier); color: var(--encre); border: 2px dashed var(--encre); }
+.st-illisible .statut-icone {
+  color: var(--encre);
+  border: 2px solid var(--encre-secondaire);
+  background: repeating-linear-gradient(45deg, var(--papier) 0 3px, var(--sable-fonce) 3px 6px);
+}
+.st-non-fourni .statut-icone { background: var(--papier); color: var(--encre-secondaire); border: 2px dotted var(--encre-secondaire); }
+.st-non-applicable { color: var(--encre-secondaire); }
+.st-non-applicable .statut-icone { background: var(--papier-ligne); color: var(--encre-secondaire); border: 2px solid var(--papier-bord); }
+.st-inconnu .statut-icone { background: var(--papier); color: var(--encre); border: 4px double var(--encre-secondaire); }
+
+/* ---------- Animations ---------- */
+@keyframes arrivee { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes glisse { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }
+@keyframes points { 0%, 80%, 100% { transform: translateY(0); opacity: 0.4; } 40% { transform: translateY(-4px); opacity: 1; } }
+@keyframes pulsation { 50% { opacity: 0.3; } }
+@keyframes scan { from { top: 18%; } to { top: 82%; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* Champ vérifié par la sage-femme : coche dans un carré (forme distincte de la coche ronde « lu ») */
+.st-verifie .statut-icone { border-radius: 5px; background: var(--encre); color: var(--papier); border: 2px solid var(--encre); }

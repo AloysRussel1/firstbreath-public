@@ -1,0 +1,321 @@
+{
+ "variante": "combinaison",
+ "page_pdf": 34,
+ "patiente": 5,
+ "type_page": "ANTECEDENTS",
+ "image_sha256": "0ae203761bc67135554da6db542df03e47a75e0c8bca7e5f4c54d2f90ead6cad",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "antecedents-v2",
+ "ratio_reflexion": 1.49,
+ "champs": [
+  {
+   "champ": "profil.age",
+   "valeur": 38,
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "profil.niveau_instruction",
+   "valeur": "Collège",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "profil.consanguinite",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "profil.grossesse_desiree",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "antecedents.familiaux.hta",
+   "valeur": "RAS",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "antecedents.familiaux.diabete",
+   "valeur": "RAS",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "antecedents.familiaux.maladies_hereditaires",
+   "valeur": "RAS",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "antecedents.familiaux.malformations",
+   "valeur": "femme : Père ; mari : RAS",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "antecedents.familiaux.allergies",
+   "valeur": "RAS",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "antecedents.femme.medicaux",
+   "valeur": "RAS",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "antecedents.femme.chirurgicaux",
+   "valeur": "RAS",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "antecedents.femme.gynecologiques",
+   "valeur": "Cycles réguliers",
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "obstetrique.avortements",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "obstetrique.prematures",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "obstetrique.morts_foetales",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "obstetrique.accouchements_anterieurs",
+   "valeur": [
+    {
+     "date": "2023-05-28",
+     "modalite": "Voie basse",
+     "indication_cesarienne": null,
+     "complication": "RAS",
+     "poids_g": 3636,
+     "complication_nouveau_ne": "RAS"
+    }
+   ],
+   "statut": "A_REVISER",
+   "confiance": 0.6,
+   "signaux": {
+    "confiance_modele": 0.6,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "obstetrique.gestite",
+   "valeur": 2,
+   "statut": "A_REVISER",
+   "confiance": 0.5,
+   "signaux": {
+    "confiance_modele": 0.5,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "obstetrique.parite",
+   "valeur": 1,
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "obstetrique.enfants_vivants",
+   "valeur": 1,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "vaccination.vat_doses",
+   "valeur": 1,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "vaccination.rubeole",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "vaccination.hepatite_b",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": null
+   }
+  },
+  {
+   "champ": "depistage.frottis_iva",
+   "valeur": "Non fait",
+   "statut": "A_REVISER",
+   "confiance": 0.55,
+   "signaux": {
+    "confiance_modele": 0.55,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.49,
+    "raison": "jugé douteux par le modèle"
+   }
+  }
+ ]
+}

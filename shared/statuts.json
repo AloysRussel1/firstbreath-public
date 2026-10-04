@@ -1,0 +1,11 @@
+{
+  "statuts_champ": ["CONNU", "INCONNU", "NON_FOURNI", "ILLISIBLE", "NON_APPLICABLE", "A_REVISER"],
+  "etats_enregistrement": ["CAPTURE", "EN_ATTENTE_IA", "TRAITE_IA", "A_REVISER", "VALIDE",
+                           "PATIENTE_LIEE", "ENREGISTRE", "SYNCHRONISE"],
+  "etats_echec": ["ECHEC_TRAITEMENT", "ECHEC_SYNCHRONISATION", "DOUBLON_SUSPECTE",
+                  "REVISION_MANUELLE_REQUISE"],
+  "types_page": ["IDENTIFICATION", "ANTECEDENTS", "GROSSESSE_ACTUELLE", "ACCOUCHEMENT",
+                 "PP_PRECOCE_MERE", "PP_PRECOCE_NOUVEAU_NE", "PP_TARDIF_MERE", "PP_TARDIF_NOUVEAU_NE"],
+  "seuil_question_suivi": 0.92,
+  "champs_interdits": ["nom", "prenom", "nom_mari", "cin", "telephone", "adresse"]
+}

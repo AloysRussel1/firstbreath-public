@@ -1,0 +1,159 @@
+{
+ "variante": "flou",
+ "page_pdf": 14,
+ "patiente": 2,
+ "type_page": "PP_PRECOCE_NOUVEAU_NE",
+ "image_sha256": "c5c0a5c6ea5159b7ce005155629b4d1a4fa4bb11f58b14fd37dd4443ef6862f0",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "pp-nouveau-ne-v1",
+ "ratio_reflexion": 0.95,
+ "champs": [
+  {
+   "champ": "pp_precoce.nouveau_ne.date_consultation",
+   "valeur": "2026-05-30",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.nouveau_ne.age_jours",
+   "valeur": 7,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.nouveau_ne.temperature_c",
+   "valeur": 37.0,
+   "statut": "A_REVISER",
+   "confiance": 0.65,
+   "signaux": {
+    "confiance_modele": 0.65,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "pp_precoce.nouveau_ne.poids_g",
+   "valeur": 3564,
+   "statut": "A_REVISER",
+   "confiance": 0.6,
+   "signaux": {
+    "confiance_modele": 0.6,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "pp_precoce.nouveau_ne.taille_cm",
+   "valeur": 50.0,
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.nouveau_ne.perimetre_cranien_cm",
+   "valeur": 34.0,
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.nouveau_ne.allaitement",
+   "valeur": "EXCLUSIF",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.nouveau_ne.signes_danger",
+   "valeur": [],
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.nouveau_ne.vaccins_du_jour",
+   "valeur": [
+    "BCG",
+    "HB"
+   ],
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.nouveau_ne.transfert",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.nouveau_ne.prochaine_visite",
+   "valeur": "2026-06-29",
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.95,
+    "raison": null
+   }
+  }
+ ]
+}

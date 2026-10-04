@@ -1,0 +1,119 @@
+{
+ "variante": "propre",
+ "page_pdf": 33,
+ "patiente": 5,
+ "type_page": "IDENTIFICATION",
+ "image_sha256": "be19418d61ef7eba39ad0701de717238f37624ddcc0226b62eddc10b66d3e764",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "identification-v1",
+ "ratio_reflexion": 0.96,
+ "champs": [
+  {
+   "champ": "identification.numero_fiche",
+   "valeur": "2026-978-005",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.region",
+   "valeur": "Souss-Massa",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.province",
+   "valeur": "Taroudant",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.etablissement",
+   "valeur": "CSC Al Amal",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.type_etablissement",
+   "valeur": "CSC",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.mode_couverture",
+   "valeur": "FIXE",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.grossesse_a_risque",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.types_risque",
+   "valeur": [
+    "ANEMIE"
+   ],
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 0.96,
+    "raison": null
+   }
+  }
+ ]
+}

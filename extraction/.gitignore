@@ -1,0 +1,5 @@
+# Réponses du modèle mises en cache par client.py (régénérables, payantes à recalculer)
+cache/
+
+# Images dégradées générées par degrader.py (reproductibles, graine fixe)
+degradees/

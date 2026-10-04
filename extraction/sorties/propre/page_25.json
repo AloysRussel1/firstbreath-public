@@ -1,0 +1,117 @@
+{
+ "variante": "propre",
+ "page_pdf": 25,
+ "patiente": 4,
+ "type_page": "IDENTIFICATION",
+ "image_sha256": "bb0c8fa6d4f33095170db7fcebf5acc0226a3481816b58eff987022daffca0f3",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "identification-v1",
+ "ratio_reflexion": 1.01,
+ "champs": [
+  {
+   "champ": "identification.numero_fiche",
+   "valeur": "2026-995-004",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.01,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.region",
+   "valeur": "Béni Mellal-Khénifra",
+   "statut": "A_REVISER",
+   "confiance": 0.8,
+   "signaux": {
+    "confiance_modele": 0.8,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.01,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "identification.province",
+   "valeur": "Azilal",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.01,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.etablissement",
+   "valeur": "CSCA Ait Mhamed",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.01,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.type_etablissement",
+   "valeur": "CSCA",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.01,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.mode_couverture",
+   "valeur": "FIXE",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.01,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.grossesse_a_risque",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.01,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.types_risque",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.01,
+    "raison": null
+   }
+  }
+ ]
+}

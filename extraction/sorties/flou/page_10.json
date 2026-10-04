@@ -1,0 +1,337 @@
+{
+ "variante": "flou",
+ "page_pdf": 10,
+ "patiente": 2,
+ "type_page": "ANTECEDENTS",
+ "image_sha256": "0bf0ecf7b96eb3f6705ad420e947197802a27df7f5e9e8cad48d18a718935163",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "antecedents-v2",
+ "ratio_reflexion": 7.7,
+ "champs": [
+  {
+   "champ": "profil.age",
+   "valeur": 21,
+   "statut": "A_REVISER",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.56 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "profil.niveau_instruction",
+   "valeur": "Aucun",
+   "statut": "A_REVISER",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.56 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "profil.consanguinite",
+   "valeur": false,
+   "statut": "A_REVISER",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.56 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "profil.grossesse_desiree",
+   "valeur": true,
+   "statut": "A_REVISER",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.56 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "antecedents.familiaux.hta",
+   "valeur": "RAS",
+   "statut": "A_REVISER",
+   "confiance": 0.53,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.53 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "antecedents.familiaux.diabete",
+   "valeur": "RAS",
+   "statut": "A_REVISER",
+   "confiance": 0.53,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.53 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "antecedents.familiaux.maladies_hereditaires",
+   "valeur": "femme : oncle ; mari : RAS",
+   "statut": "A_REVISER",
+   "confiance": 0.437,
+   "signaux": {
+    "confiance_modele": 0.7,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance 0.70 < 0.75"
+   }
+  },
+  {
+   "champ": "antecedents.familiaux.malformations",
+   "valeur": "RAS",
+   "statut": "A_REVISER",
+   "confiance": 0.53,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.53 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "antecedents.familiaux.allergies",
+   "valeur": "RAS",
+   "statut": "A_REVISER",
+   "confiance": 0.53,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.53 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "antecedents.femme.medicaux",
+   "valeur": "RAS",
+   "statut": "A_REVISER",
+   "confiance": 0.53,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.53 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "antecedents.femme.chirurgicaux",
+   "valeur": "RAS",
+   "statut": "A_REVISER",
+   "confiance": 0.499,
+   "signaux": {
+    "confiance_modele": 0.8,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.50 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "antecedents.femme.gynecologiques",
+   "valeur": "Cycles réguliers",
+   "statut": "A_REVISER",
+   "confiance": 0.468,
+   "signaux": {
+    "confiance_modele": 0.75,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.47 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "obstetrique.avortements",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": null
+   }
+  },
+  {
+   "champ": "obstetrique.prematures",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": null
+   }
+  },
+  {
+   "champ": "obstetrique.morts_foetales",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": null
+   }
+  },
+  {
+   "champ": "obstetrique.accouchements_anterieurs",
+   "valeur": [
+    {
+     "date": "2018-08-21",
+     "modalite": "Voie basse",
+     "indication_cesarienne": null,
+     "complication": "RAS",
+     "poids_g": 3626,
+     "complication_nouveau_ne": "RAS"
+    },
+    {
+     "date": "2021-07-18",
+     "modalite": "Voie basse",
+     "indication_cesarienne": null,
+     "complication": "RAS",
+     "poids_g": 3639,
+     "complication_nouveau_ne": "RAS"
+    },
+    {
+     "date": "2021-09-03",
+     "modalite": "Voie basse",
+     "indication_cesarienne": null,
+     "complication": "RAS",
+     "poids_g": 3611,
+     "complication_nouveau_ne": "RAS"
+    }
+   ],
+   "statut": "A_REVISER",
+   "confiance": 0.281,
+   "signaux": {
+    "confiance_modele": 0.45,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "obstetrique.gestite",
+   "valeur": 4,
+   "statut": "A_REVISER",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.56 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "obstetrique.parite",
+   "valeur": 3,
+   "statut": "A_REVISER",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.56 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "obstetrique.enfants_vivants",
+   "valeur": 3,
+   "statut": "A_REVISER",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.56 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "vaccination.vat_doses",
+   "valeur": 2,
+   "statut": "A_REVISER",
+   "confiance": 0.53,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.53 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "vaccination.rubeole",
+   "valeur": true,
+   "statut": "A_REVISER",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.56 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "vaccination.hepatite_b",
+   "valeur": true,
+   "statut": "A_REVISER",
+   "confiance": 0.562,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance finale 0.56 < 0.75 (réflexion x7.7 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "depistage.frottis_iva",
+   "valeur": "Normal",
+   "statut": "A_REVISER",
+   "confiance": 0.437,
+   "signaux": {
+    "confiance_modele": 0.7,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 7.7,
+    "raison": "confiance 0.70 < 0.75"
+   }
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "variante": "combinaison",
+ "page_pdf": 33,
+ "patiente": 5,
+ "type_page": "IDENTIFICATION",
+ "image_sha256": "f3b09ed134c2e7197d532d6f5314140358fe2f2af24874cdd77041b5840ab8ac",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "identification-v1",
+ "ratio_reflexion": 3.98,
+ "champs": [
+  {
+   "champ": "identification.numero_fiche",
+   "valeur": "2026-978-005",
+   "statut": "A_REVISER",
+   "confiance": 0.507,
+   "signaux": {
+    "confiance_modele": 0.55,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 3.98,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "identification.region",
+   "valeur": "Souss-Massa",
+   "statut": "CONNU",
+   "confiance": 0.783,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 3.98,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.province",
+   "valeur": "Taroudant",
+   "statut": "CONNU",
+   "confiance": 0.783,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 3.98,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.etablissement",
+   "valeur": "CSC Al Amal",
+   "statut": "A_REVISER",
+   "confiance": 0.737,
+   "signaux": {
+    "confiance_modele": 0.8,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 3.98,
+    "raison": "confiance finale 0.74 < 0.75 (réflexion x4.0 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "identification.type_etablissement",
+   "valeur": "CSC",
+   "statut": "CONNU",
+   "confiance": 0.829,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 3.98,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.mode_couverture",
+   "valeur": "FIXE",
+   "statut": "CONNU",
+   "confiance": 0.829,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 3.98,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.grossesse_a_risque",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.829,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 3.98,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.types_risque",
+   "valeur": [
+    "ANEMIE"
+   ],
+   "statut": "CONNU",
+   "confiance": 0.783,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 3.98,
+    "raison": null
+   }
+  }
+ ]
+}

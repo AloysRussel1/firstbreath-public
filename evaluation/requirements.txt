@@ -1,0 +1,5 @@
+pymupdf
+pandas
+matplotlib
+scikit-learn
+rapidfuzz

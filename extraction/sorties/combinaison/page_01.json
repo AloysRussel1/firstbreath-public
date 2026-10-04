@@ -1,0 +1,117 @@
+{
+ "variante": "combinaison",
+ "page_pdf": 1,
+ "patiente": 1,
+ "type_page": "IDENTIFICATION",
+ "image_sha256": "31e62508a6d1bb627ef786d92155623b436c5f422872e9e348335db3a21ce8be",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "identification-v1",
+ "ratio_reflexion": 1.19,
+ "champs": [
+  {
+   "champ": "identification.numero_fiche",
+   "valeur": "2026-823-001",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.region",
+   "valeur": "Rabat-Salé-Kénitra",
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.province",
+   "valeur": "Kénitra",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.etablissement",
+   "valeur": "CSCA Al Wifaq",
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.type_etablissement",
+   "valeur": "CSCA",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.mode_couverture",
+   "valeur": "FIXE",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.grossesse_a_risque",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.types_risque",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  }
+ ]
+}

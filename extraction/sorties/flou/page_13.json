@@ -1,0 +1,146 @@
+{
+ "variante": "flou",
+ "page_pdf": 13,
+ "patiente": 2,
+ "type_page": "PP_PRECOCE_MERE",
+ "image_sha256": "cb12ae9d800998883ad73efa7b421013e71386a48174d385d5dbd6bbcd2fca17",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "pp-mere-v1",
+ "ratio_reflexion": 6.07,
+ "champs": [
+  {
+   "champ": "pp_precoce.mere.date_consultation",
+   "valeur": "2026-05-30",
+   "statut": "A_REVISER",
+   "confiance": 0.415,
+   "signaux": {
+    "confiance_modele": 0.55,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 6.07,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.temperature_c",
+   "valeur": 36.9,
+   "statut": "A_REVISER",
+   "confiance": 0.49,
+   "signaux": {
+    "confiance_modele": 0.65,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 6.07,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.tension",
+   "valeur": "120/70",
+   "statut": "A_REVISER",
+   "confiance": 0.377,
+   "signaux": {
+    "confiance_modele": 0.5,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 6.07,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.pouls",
+   "valeur": 74,
+   "statut": "A_REVISER",
+   "confiance": 0.604,
+   "signaux": {
+    "confiance_modele": 0.8,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 6.07,
+    "raison": "confiance finale 0.60 < 0.75 (réflexion x6.1 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.poids_kg",
+   "valeur": 78.0,
+   "statut": "A_REVISER",
+   "confiance": 0.604,
+   "signaux": {
+    "confiance_modele": 0.8,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 6.07,
+    "raison": "confiance finale 0.60 < 0.75 (réflexion x6.1 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.conjonctives",
+   "valeur": "NORMALES",
+   "statut": "A_REVISER",
+   "confiance": 0.717,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 6.07,
+    "raison": "confiance finale 0.72 < 0.75 (réflexion x6.1 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.complications",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.679,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 6.07,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.traitement",
+   "valeur": [
+    "FER",
+    "VITAMINE_A"
+   ],
+   "statut": "A_REVISER",
+   "confiance": 0.679,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 6.07,
+    "raison": "confiance finale 0.68 < 0.75 (réflexion x6.1 par rapport à une page propre)"
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.prochain_rdv",
+   "valeur": "2026-07-14",
+   "statut": "A_REVISER",
+   "confiance": 0.377,
+   "signaux": {
+    "confiance_modele": 0.5,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 6.07,
+    "raison": "jugé douteux par le modèle"
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.planification_familiale",
+   "valeur": "PILULE",
+   "statut": "A_REVISER",
+   "confiance": 0.679,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 6.07,
+    "raison": "confiance finale 0.68 < 0.75 (réflexion x6.1 par rapport à une page propre)"
+   }
+  }
+ ]
+}

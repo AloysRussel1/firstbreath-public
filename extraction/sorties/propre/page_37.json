@@ -1,0 +1,148 @@
+{
+ "variante": "propre",
+ "page_pdf": 37,
+ "patiente": 5,
+ "type_page": "PP_PRECOCE_MERE",
+ "image_sha256": "66925e2c56f75ca1b17a5e621c1df50b49d63b4262fef126d91dfc683b876a34",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "pp-mere-v1",
+ "ratio_reflexion": 1.19,
+ "champs": [
+  {
+   "champ": "pp_precoce.mere.date_consultation",
+   "valeur": "2026-05-16",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.temperature_c",
+   "valeur": 37.0,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.tension",
+   "valeur": "114/77",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.pouls",
+   "valeur": 81,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.poids_kg",
+   "valeur": 59.0,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.conjonctives",
+   "valeur": "DECOLOREES",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.complications",
+   "valeur": [
+    "ANEMIE"
+   ],
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.traitement",
+   "valeur": [
+    "FER",
+    "VITAMINE_A"
+   ],
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.prochain_rdv",
+   "valeur": "2026-06-20",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  },
+  {
+   "champ": "pp_precoce.mere.planification_familiale",
+   "valeur": "AUCUNE",
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.19,
+    "raison": null
+   }
+  }
+ ]
+}

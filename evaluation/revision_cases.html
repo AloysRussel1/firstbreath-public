@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr"><meta charset="utf-8"><title>Relecture des cases — développement</title>
+<style>body{font:16px system-ui;margin:20px;max-width:1400px}main{display:grid;grid-template-columns:1fr 1fr;gap:24px}img{width:100%}label{display:block;margin:8px 0}fieldset{margin-bottom:16px}button,select{padding:8px}small{display:block;color:#555}</style>
+<h1>Relecture des cases — pages 1–48</h1>
+<p>Relire l'image avant de changer une réponse. Seules les corrections explicites sont exportées. Une réponse de référence ne prouve pas une validation humaine indépendante.</p>
+<label>Page <select id="page"></select></label><button id="download">Télécharger les corrections</button>
+<p id="count"></p><main><img id="image" alt="Zones de cases sans identifiants directs"><section id="fields"></section></main>
+<script>
+const pages=__DONNEES__, edits=new Map(), pageSelect=document.querySelector('#page');
+for(const p of pages){const o=new Option(`Page ${p.page_no}`,p.page_no);pageSelect.add(o)}
+function render(){const p=pages.find(p=>p.page_no===Number(pageSelect.value));document.querySelector('#image').src=`page_${String(p.page_no).padStart(2,'0')}.png`;const container=document.querySelector('#fields');container.replaceChildren();
+for(const f of p.champs){const box=document.createElement('fieldset'),legend=document.createElement('legend');legend.textContent=f.champ;box.append(legend);
+const initial=f.reference||{statut:'NON_FOURNI',valeur:null}, id=`${p.page_no}:${f.champ}`, current=edits.get(id)||initial;
+const note=document.createElement('small');note.textContent=`Référence : ${initial.statut}, ${JSON.stringify(initial.valeur)}`;box.append(note);
+const status=document.createElement('select');for(const s of ['CONNU','NON_FOURNI','NON_APPLICABLE','INCONNU','ILLISIBLE','A_REVISER'])status.add(new Option(s,s));status.value=current.statut;box.append(status);
+const controls=[];const choices=f.type==='booleen'?[true,false]:f.choix;
+for(const choice of choices){const label=document.createElement('label'),input=document.createElement('input');input.type=f.type==='liste_choix'?'checkbox':'radio';input.name=id;input.checked=f.type==='liste_choix'?(current.valeur||[]).includes(choice):current.valeur===choice;label.append(input,document.createTextNode(String(choice)));box.append(label);controls.push([choice,input])}
+function save(){let value=null;if(['CONNU','A_REVISER'].includes(status.value)){value=f.type==='liste_choix'?controls.filter(c=>c[1].checked).map(c=>c[0]):controls.find(c=>c[1].checked)?.[0];if(value===undefined){alert('Choisir une valeur avant de marquer CONNU.');return}}edits.set(id,{page_no:p.page_no,champ:f.champ,statut:status.value,valeur:value});document.querySelector('#count').textContent=`${edits.size} corrections préparées`}
+status.onchange=save;for(const [,input]of controls)input.onchange=save;container.append(box)}}
+pageSelect.onchange=render;render();
+document.querySelector('#download').onclick=()=>{const blob=new Blob([JSON.stringify({corrections:[...edits.values()]},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='corrections_dev.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+</script></html>

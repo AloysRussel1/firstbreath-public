@@ -1,0 +1,117 @@
+{
+ "variante": "propre",
+ "page_pdf": 41,
+ "patiente": 6,
+ "type_page": "IDENTIFICATION",
+ "image_sha256": "5f01cd01c2491bad27742bc412cdcb97a92074602af32a83d28cb4019b16feda",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "identification-v1",
+ "ratio_reflexion": 1.96,
+ "champs": [
+  {
+   "champ": "identification.numero_fiche",
+   "valeur": "2026-987-006",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.region",
+   "valeur": "Tanger-Tétouan-Al Hoceïma",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.province",
+   "valeur": "Chefchaouen",
+   "statut": "CONNU",
+   "confiance": 0.96,
+   "signaux": {
+    "confiance_modele": 0.96,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.etablissement",
+   "valeur": "DR Bni Ahmed",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.type_etablissement",
+   "valeur": "DR",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.mode_couverture",
+   "valeur": "MOBILE",
+   "statut": "CONNU",
+   "confiance": 0.96,
+   "signaux": {
+    "confiance_modele": 0.96,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.grossesse_a_risque",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.96,
+    "raison": null
+   }
+  },
+  {
+   "champ": "identification.types_risque",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.96,
+    "raison": null
+   }
+  }
+ ]
+}

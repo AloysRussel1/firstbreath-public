@@ -1,0 +1,2093 @@
+{
+ "variante": "sombre",
+ "page_pdf": 11,
+ "patiente": 2,
+ "type_page": "GROSSESSE_ACTUELLE",
+ "image_sha256": "c6fba23fcd79f9c4871c250e4e3be08336973bc19c65f5336e4801f10c7f23bc",
+ "modele": "claude-sonnet-5",
+ "effort": null,
+ "version_prompt": "grossesse-v1",
+ "ratio_reflexion": 1.2,
+ "champs": [
+  {
+   "champ": "grossesse.ddr",
+   "valeur": "2025-08-11",
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.taille_cm",
+   "valeur": 160,
+   "statut": "CONNU",
+   "confiance": 0.97,
+   "signaux": {
+    "confiance_modele": 0.97,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.groupage",
+   "valeur": "A",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.rhesus",
+   "valeur": "POSITIF",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.date_prevue_accouchement",
+   "valeur": "2026-05-18",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.date_depassement_terme",
+   "valeur": "2026-05-25",
+   "statut": "CONNU",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.tests.vih",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.tests.syphilis",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.tests.hepatite_b",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.tests.hepatite_c",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.tests.rubeole",
+   "valeur": "IMMUNE",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.tests.toxoplasmose",
+   "valeur": "NON_IMMUNE",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.tests.plaquettes",
+   "valeur": 247,
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.tests.glycemie_g_l",
+   "valeur": 0.8,
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.tests.rai",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.traitement.fer",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].date_rdv",
+   "valeur": "2025-11-02",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].date_venue",
+   "valeur": "2025-10-05",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].relance",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].age_gestationnel_sa",
+   "valeur": 8,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].poids_kg",
+   "valeur": 71.0,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].tension",
+   "valeur": "151/97",
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].oedemes",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].mouvements_actifs",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].bcf",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].col",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].presentation",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].glucosurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].albuminurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].hemoglobine_g_dl",
+   "valeur": 13.2,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].examine_par_fonction",
+   "valeur": "SAGE_FEMME",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].date_rdv",
+   "valeur": "2025-12-02",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].date_venue",
+   "valeur": "2025-11-04",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].relance",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].age_gestationnel_sa",
+   "valeur": 12,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].poids_kg",
+   "valeur": 73.3,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].tension",
+   "valeur": "139/89",
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].oedemes",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].mouvements_actifs",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].bcf",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].col",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].presentation",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].glucosurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].albuminurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].examine_par_fonction",
+   "valeur": "SAGE_FEMME",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].date_rdv",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].date_venue",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].relance",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].poids_kg",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].tension",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].oedemes",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].mouvements_actifs",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].bcf",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].col",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].presentation",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].glucosurie",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].albuminurie",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].examine_par_fonction",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].date_rdv",
+   "valeur": "2026-01-20",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].date_venue",
+   "valeur": "2025-12-23",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].relance",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].age_gestationnel_sa",
+   "valeur": 19,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].poids_kg",
+   "valeur": 75.2,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].tension",
+   "valeur": "137/92",
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].oedemes",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].mouvements_actifs",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].hauteur_uterine_cm",
+   "valeur": 15,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].bcf",
+   "valeur": 129,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].col",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].presentation",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].glucosurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].albuminurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].hemoglobine_g_dl",
+   "valeur": 12.5,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].examine_par_fonction",
+   "valeur": "MEDECIN",
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].date_rdv",
+   "valeur": "2026-02-25",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].date_venue",
+   "valeur": "2026-01-28",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].relance",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].age_gestationnel_sa",
+   "valeur": 24,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].poids_kg",
+   "valeur": 77.8,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].tension",
+   "valeur": "141/88",
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].oedemes",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].mouvements_actifs",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].hauteur_uterine_cm",
+   "valeur": 20,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].bcf",
+   "valeur": 152,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].col",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].presentation",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].glucosurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].albuminurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].examine_par_fonction",
+   "valeur": "INFIRMIER",
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].date_rdv",
+   "valeur": "2026-03-22",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].date_venue",
+   "valeur": "2026-02-22",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].relance",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].age_gestationnel_sa",
+   "valeur": 28,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].poids_kg",
+   "valeur": 79.1,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].tension",
+   "valeur": "152/95",
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].oedemes",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].mouvements_actifs",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].hauteur_uterine_cm",
+   "valeur": 24,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].bcf",
+   "valeur": 129,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].col",
+   "valeur": "Fermé",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].presentation",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].glucosurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].albuminurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].examine_par_fonction",
+   "valeur": "INFIRMIER",
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].date_rdv",
+   "valeur": "2026-04-11",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].date_venue",
+   "valeur": "2026-03-14",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].relance",
+   "valeur": false,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].age_gestationnel_sa",
+   "valeur": 31,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].poids_kg",
+   "valeur": 79.1,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].tension",
+   "valeur": "146/96",
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].oedemes",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].mouvements_actifs",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].hauteur_uterine_cm",
+   "valeur": 27,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].bcf",
+   "valeur": 130,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].col",
+   "valeur": "Fermé",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].presentation",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].glucosurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].albuminurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].examine_par_fonction",
+   "valeur": "MEDECIN",
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].date_rdv",
+   "valeur": "2026-05-11",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].date_venue",
+   "valeur": "2026-04-13",
+   "statut": "CONNU",
+   "confiance": 0.93,
+   "signaux": {
+    "confiance_modele": 0.93,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].relance",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].age_gestationnel_sa",
+   "valeur": 35,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].poids_kg",
+   "valeur": 80.6,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].tension",
+   "valeur": "150/88",
+   "statut": "CONNU",
+   "confiance": 0.88,
+   "signaux": {
+    "confiance_modele": 0.88,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].oedemes",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].mouvements_actifs",
+   "valeur": true,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].hauteur_uterine_cm",
+   "valeur": 31,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].bcf",
+   "valeur": 132,
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].col",
+   "valeur": "Fermé",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].presentation",
+   "valeur": "CEPHALIQUE",
+   "statut": "CONNU",
+   "confiance": 0.92,
+   "signaux": {
+    "confiance_modele": 0.92,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].glucosurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].albuminurie",
+   "valeur": "NEGATIF",
+   "statut": "CONNU",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "NON_FOURNI",
+   "confiance": 0.9,
+   "signaux": {
+    "confiance_modele": 0.9,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].examine_par_fonction",
+   "valeur": "MEDECIN",
+   "statut": "CONNU",
+   "confiance": 0.85,
+   "signaux": {
+    "confiance_modele": 0.85,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].date_rdv",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].date_venue",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].relance",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].poids_kg",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].tension",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].oedemes",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].mouvements_actifs",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].bcf",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].col",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].presentation",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].glucosurie",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].albuminurie",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].examine_par_fonction",
+   "valeur": null,
+   "statut": "NON_APPLICABLE",
+   "confiance": 0.95,
+   "signaux": {
+    "confiance_modele": 0.95,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 1.2,
+    "raison": null
+   }
+  }
+ ]
+}

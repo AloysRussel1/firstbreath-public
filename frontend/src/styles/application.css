@@ -1,0 +1,137 @@
+/* Coque de l'application : en-tête bleu-vert, écran, barre d'onglets du bas. */
+
+.application {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--creme);
+  /* Toute la largeur sur téléphone (marges 12 à 16 px) ; contenu centré jusqu'à 900 px au-delà. */
+  --largeur-contenu: 900px;
+  --marge-ecran: 12px;
+}
+@media (min-width: 600px) { .application { --marge-ecran: 16px; } }
+.ecran { flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: hidden; }
+.ecran-conversation { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.ecran-conversation[hidden] { display: none; }
+.ecran-contenu {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--espace-3) max(var(--marge-ecran), calc((100% - var(--largeur-contenu)) / 2));
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-3);
+}
+.ecran-contenu h2 { font-size: 20px; }
+/* Écran qui défile en colonne flex : aucun bloc ne doit rétrécir (un bloc en overflow: hidden tomberait à 0). */
+.ecran-contenu > * { flex-shrink: 0; }
+
+/* ---------- En-tête ---------- */
+.entete {
+  display: flex;
+  align-items: center;
+  gap: var(--espace-3);
+  padding: var(--espace-2) max(var(--marge-ecran), calc((100% - 1240px) / 2));
+  background: var(--marque);
+  color: var(--marque-texte);
+}
+.entete-logo { display: grid; border-radius: 12px 12px 12px 3px; }
+.entete-logo .logo { background: var(--marque-fonce); box-shadow: inset 0 0 0 1px rgba(242, 247, 243, 0.2); }
+.entete-texte { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.entete-titre { font-family: var(--police-titre); font-weight: 600; font-size: 18px; letter-spacing: -0.02em; }
+.entete-ligne { display: flex; align-items: center; gap: var(--espace-2); flex-wrap: wrap; }
+.pastille {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 10px 2px 8px;
+  border-radius: var(--rayon-pilule);
+  font-size: 13px;
+  font-weight: 700;
+  background: var(--en-ligne);
+  color: var(--encre);
+}
+.pastille i { width: 8px; height: 8px; border-radius: 50%; background: var(--encre); }
+.pastille.hors-ligne, .pastille.simule { background: var(--hors-ligne); color: var(--hors-ligne-encre); }
+.pastille.hors-ligne i, .pastille.simule i { background: transparent; border: 2px solid var(--hors-ligne-encre); }
+.pastille.verification { background: rgba(242, 247, 243, 0.25); color: var(--marque-texte); }
+.pastille.verification i { background: var(--marque-texte); animation: pulsation 1.2s infinite; }
+.identite { font-size: 13px; padding: 2px 8px; border-radius: var(--rayon-pilule); border: 1px solid rgba(242, 247, 243, 0.45); white-space: nowrap; }
+.bouton-simulation {
+  flex: none;
+  max-width: 116px;
+  min-height: var(--cible);
+  padding: 4px 10px;
+  border-radius: var(--rayon-petit);
+  border: 1.5px solid var(--marque-texte);
+  background: transparent;
+  color: var(--marque-texte);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  cursor: pointer;
+}
+.bouton-simulation.actif { background: var(--hors-ligne); border-color: var(--hors-ligne); color: var(--hors-ligne-encre); }
+
+/* ---------- Barre d'onglets ---------- */
+.onglets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--papier);
+  border-top: 1px solid var(--papier-bord);
+  padding: 0 max(0px, calc((100% - var(--largeur-contenu)) / 2)) env(safe-area-inset-bottom);
+}
+.onglet {
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--encre-secondaire);
+}
+.onglet.actif { color: var(--marque); }
+.onglet.actif .onglet-icone::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 18px;
+  height: 3px;
+  margin-left: -9px;
+  border-radius: 2px;
+  background: var(--marque);
+}
+.onglet-icone { position: relative; display: grid; place-items: center; }
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -12px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: var(--rayon-pilule);
+  background: var(--hors-ligne);
+  color: var(--hors-ligne-encre);
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  border: 1.5px solid var(--papier);
+}
+
+
+/* Faible hauteur (zoom à 200 %, téléphone à l'horizontale) : en-tête, onglets et barre compacts pour laisser
+   la place au fil ; les cibles restent d'au moins 44 px. */
+@media (max-height: 560px) {
+  .entete { padding-block: 4px; }
+  .entete .identite { display: none; }
+  .onglet { min-height: var(--cible); flex-direction: row; gap: 6px; }
+  .onglet.actif .onglet-icone::after { display: none; }
+  .onglet.actif { text-decoration: underline; text-underline-offset: 4px; }
+}

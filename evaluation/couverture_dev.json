@@ -1,0 +1,443 @@
+{
+  "pages": "1-48",
+  "champs_possibles": 1470,
+  "champs_annotes": 1470,
+  "champs_non_annotes": 0,
+  "couverture": 1.0,
+  "annotations_visuelles": 278,
+  "validation_humaine_independante": false,
+  "pages_detail": [
+    {
+      "page_no": 1,
+      "specimen_no": 1,
+      "type_page": "IDENTIFICATION",
+      "possibles": 8,
+      "annotes": 8,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 2,
+      "specimen_no": 1,
+      "type_page": "ANTECEDENTS",
+      "possibles": 23,
+      "annotes": 23,
+      "annotations_visuelles": 9,
+      "non_annotes": []
+    },
+    {
+      "page_no": 3,
+      "specimen_no": 1,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "possibles": 160,
+      "annotes": 160,
+      "annotations_visuelles": 7,
+      "non_annotes": []
+    },
+    {
+      "page_no": 4,
+      "specimen_no": 1,
+      "type_page": "ACCOUCHEMENT",
+      "possibles": 12,
+      "annotes": 12,
+      "annotations_visuelles": 6,
+      "non_annotes": []
+    },
+    {
+      "page_no": 5,
+      "specimen_no": 1,
+      "type_page": "PP_PRECOCE_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 6,
+      "specimen_no": 1,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 7,
+      "specimen_no": 1,
+      "type_page": "PP_TARDIF_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 8,
+      "specimen_no": 1,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 9,
+      "specimen_no": 2,
+      "type_page": "IDENTIFICATION",
+      "possibles": 8,
+      "annotes": 8,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 10,
+      "specimen_no": 2,
+      "type_page": "ANTECEDENTS",
+      "possibles": 23,
+      "annotes": 23,
+      "annotations_visuelles": 11,
+      "non_annotes": []
+    },
+    {
+      "page_no": 11,
+      "specimen_no": 2,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "possibles": 160,
+      "annotes": 160,
+      "annotations_visuelles": 8,
+      "non_annotes": []
+    },
+    {
+      "page_no": 12,
+      "specimen_no": 2,
+      "type_page": "ACCOUCHEMENT",
+      "possibles": 12,
+      "annotes": 12,
+      "annotations_visuelles": 6,
+      "non_annotes": []
+    },
+    {
+      "page_no": 13,
+      "specimen_no": 2,
+      "type_page": "PP_PRECOCE_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 14,
+      "specimen_no": 2,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 15,
+      "specimen_no": 2,
+      "type_page": "PP_TARDIF_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 16,
+      "specimen_no": 2,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 17,
+      "specimen_no": 3,
+      "type_page": "IDENTIFICATION",
+      "possibles": 8,
+      "annotes": 8,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 18,
+      "specimen_no": 3,
+      "type_page": "ANTECEDENTS",
+      "possibles": 23,
+      "annotes": 23,
+      "annotations_visuelles": 10,
+      "non_annotes": []
+    },
+    {
+      "page_no": 19,
+      "specimen_no": 3,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "possibles": 160,
+      "annotes": 160,
+      "annotations_visuelles": 24,
+      "non_annotes": []
+    },
+    {
+      "page_no": 20,
+      "specimen_no": 3,
+      "type_page": "ACCOUCHEMENT",
+      "possibles": 12,
+      "annotes": 12,
+      "annotations_visuelles": 6,
+      "non_annotes": []
+    },
+    {
+      "page_no": 21,
+      "specimen_no": 3,
+      "type_page": "PP_PRECOCE_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 22,
+      "specimen_no": 3,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 23,
+      "specimen_no": 3,
+      "type_page": "PP_TARDIF_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 24,
+      "specimen_no": 3,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 25,
+      "specimen_no": 4,
+      "type_page": "IDENTIFICATION",
+      "possibles": 8,
+      "annotes": 8,
+      "annotations_visuelles": 5,
+      "non_annotes": []
+    },
+    {
+      "page_no": 26,
+      "specimen_no": 4,
+      "type_page": "ANTECEDENTS",
+      "possibles": 23,
+      "annotes": 23,
+      "annotations_visuelles": 10,
+      "non_annotes": []
+    },
+    {
+      "page_no": 27,
+      "specimen_no": 4,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "possibles": 160,
+      "annotes": 160,
+      "annotations_visuelles": 23,
+      "non_annotes": []
+    },
+    {
+      "page_no": 28,
+      "specimen_no": 4,
+      "type_page": "ACCOUCHEMENT",
+      "possibles": 12,
+      "annotes": 12,
+      "annotations_visuelles": 6,
+      "non_annotes": []
+    },
+    {
+      "page_no": 29,
+      "specimen_no": 4,
+      "type_page": "PP_PRECOCE_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 30,
+      "specimen_no": 4,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 31,
+      "specimen_no": 4,
+      "type_page": "PP_TARDIF_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 32,
+      "specimen_no": 4,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 33,
+      "specimen_no": 5,
+      "type_page": "IDENTIFICATION",
+      "possibles": 8,
+      "annotes": 8,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 34,
+      "specimen_no": 5,
+      "type_page": "ANTECEDENTS",
+      "possibles": 23,
+      "annotes": 23,
+      "annotations_visuelles": 9,
+      "non_annotes": []
+    },
+    {
+      "page_no": 35,
+      "specimen_no": 5,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "possibles": 160,
+      "annotes": 160,
+      "annotations_visuelles": 7,
+      "non_annotes": []
+    },
+    {
+      "page_no": 36,
+      "specimen_no": 5,
+      "type_page": "ACCOUCHEMENT",
+      "possibles": 12,
+      "annotes": 12,
+      "annotations_visuelles": 5,
+      "non_annotes": []
+    },
+    {
+      "page_no": 37,
+      "specimen_no": 5,
+      "type_page": "PP_PRECOCE_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 38,
+      "specimen_no": 5,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 39,
+      "specimen_no": 5,
+      "type_page": "PP_TARDIF_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 40,
+      "specimen_no": 5,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 41,
+      "specimen_no": 6,
+      "type_page": "IDENTIFICATION",
+      "possibles": 8,
+      "annotes": 8,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 42,
+      "specimen_no": 6,
+      "type_page": "ANTECEDENTS",
+      "possibles": 23,
+      "annotes": 23,
+      "annotations_visuelles": 9,
+      "non_annotes": []
+    },
+    {
+      "page_no": 43,
+      "specimen_no": 6,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "possibles": 160,
+      "annotes": 160,
+      "annotations_visuelles": 7,
+      "non_annotes": []
+    },
+    {
+      "page_no": 44,
+      "specimen_no": 6,
+      "type_page": "ACCOUCHEMENT",
+      "possibles": 12,
+      "annotes": 12,
+      "annotations_visuelles": 6,
+      "non_annotes": []
+    },
+    {
+      "page_no": 45,
+      "specimen_no": 6,
+      "type_page": "PP_PRECOCE_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 46,
+      "specimen_no": 6,
+      "type_page": "PP_PRECOCE_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    },
+    {
+      "page_no": 47,
+      "specimen_no": 6,
+      "type_page": "PP_TARDIF_MERE",
+      "possibles": 10,
+      "annotes": 10,
+      "annotations_visuelles": 4,
+      "non_annotes": []
+    },
+    {
+      "page_no": 48,
+      "specimen_no": 6,
+      "type_page": "PP_TARDIF_NOUVEAU_NE",
+      "possibles": 11,
+      "annotes": 11,
+      "annotations_visuelles": 3,
+      "non_annotes": []
+    }
+  ]
+}

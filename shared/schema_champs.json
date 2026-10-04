@@ -1,0 +1,1162 @@
+{
+ "version": "1.0",
+ "types": {
+  "texte": "chaîne normalisée (voir CONVENTIONS.md)",
+  "entier": "int",
+  "decimal": "float, point décimal",
+  "date": "AAAA-MM-JJ",
+  "booleen": "true/false",
+  "tension": "\"SYS/DIA\" en mmHg, ex. \"110/70\"",
+  "choix": "une valeur de la liste 'choix'",
+  "liste_choix": "liste de valeurs de 'choix'",
+  "liste_objets": "liste d'objets"
+ },
+ "plages_tension": {
+  "systolique": [
+   60,
+   220
+  ],
+  "diastolique": [
+   30,
+   140
+  ]
+ },
+ "pages": {
+  "IDENTIFICATION": {
+   "page_type_no": 1,
+   "champs": [
+    {
+     "cle": "identification.numero_fiche",
+     "label_fr": "N° de la fiche",
+     "label_en": "Record number",
+     "type": "texte"
+    },
+    {
+     "cle": "identification.region",
+     "label_fr": "Région",
+     "label_en": "Region",
+     "type": "texte"
+    },
+    {
+     "cle": "identification.province",
+     "label_fr": "Province",
+     "label_en": "Province",
+     "type": "texte"
+    },
+    {
+     "cle": "identification.etablissement",
+     "label_fr": "Établissement sanitaire",
+     "label_en": "Health facility",
+     "type": "texte"
+    },
+    {
+     "cle": "identification.type_etablissement",
+     "label_fr": "Type d'établissement",
+     "label_en": "Facility type",
+     "type": "choix",
+     "choix": [
+      "DR",
+      "CSC",
+      "CSU",
+      "CSCA",
+      "CSUA"
+     ]
+    },
+    {
+     "cle": "identification.mode_couverture",
+     "label_fr": "Mode de couverture",
+     "label_en": "Coverage mode",
+     "type": "choix",
+     "choix": [
+      "FIXE",
+      "MOBILE"
+     ]
+    },
+    {
+     "cle": "identification.grossesse_a_risque",
+     "label_fr": "Grossesse classée à risque",
+     "label_en": "High-risk pregnancy",
+     "type": "booleen"
+    },
+    {
+     "cle": "identification.types_risque",
+     "label_fr": "Type de risque",
+     "label_en": "Risk types",
+     "type": "liste_choix",
+     "choix": [
+      "ANEMIE",
+      "HTA",
+      "DIABETE",
+      "CARDIOPATHIE",
+      "METRORRAGIE",
+      "INFECTION",
+      "PRE_ECLAMPSIE",
+      "ECLAMPSIE",
+      "AUTRE"
+     ]
+    }
+   ]
+  },
+  "ANTECEDENTS": {
+   "page_type_no": 2,
+   "champs": [
+    {
+     "cle": "profil.age",
+     "label_fr": "Âge",
+     "label_en": "Age",
+     "type": "entier",
+     "unite": "ans",
+     "plage_plausible": [
+      12,
+      55
+     ]
+    },
+    {
+     "cle": "profil.niveau_instruction",
+     "label_fr": "Niveau d'instruction",
+     "label_en": "Education level",
+     "type": "texte"
+    },
+    {
+     "cle": "profil.consanguinite",
+     "label_fr": "Consanguinité",
+     "label_en": "Consanguinity",
+     "type": "booleen"
+    },
+    {
+     "cle": "profil.grossesse_desiree",
+     "label_fr": "Grossesse désirée",
+     "label_en": "Desired pregnancy",
+     "type": "booleen"
+    },
+    {
+     "cle": "antecedents.familiaux.hta",
+     "label_fr": "HTA (famille)",
+     "label_en": "Hypertension (family)",
+     "type": "texte"
+    },
+    {
+     "cle": "antecedents.familiaux.diabete",
+     "label_fr": "Diabète (famille)",
+     "label_en": "Diabetes (family)",
+     "type": "texte"
+    },
+    {
+     "cle": "antecedents.familiaux.maladies_hereditaires",
+     "label_fr": "Maladies héréditaires",
+     "label_en": "Hereditary diseases",
+     "type": "texte"
+    },
+    {
+     "cle": "antecedents.familiaux.malformations",
+     "label_fr": "Malformations",
+     "label_en": "Malformations",
+     "type": "texte"
+    },
+    {
+     "cle": "antecedents.familiaux.allergies",
+     "label_fr": "Allergies",
+     "label_en": "Allergies",
+     "type": "texte"
+    },
+    {
+     "cle": "antecedents.femme.medicaux",
+     "label_fr": "Antécédents médicaux",
+     "label_en": "Medical history",
+     "type": "texte"
+    },
+    {
+     "cle": "antecedents.femme.chirurgicaux",
+     "label_fr": "Antécédents chirurgicaux",
+     "label_en": "Surgical history",
+     "type": "texte"
+    },
+    {
+     "cle": "antecedents.femme.gynecologiques",
+     "label_fr": "Antécédents gynécologiques",
+     "label_en": "Gynecological history",
+     "type": "texte"
+    },
+    {
+     "cle": "obstetrique.avortements",
+     "label_fr": "Avortements (nombre)",
+     "label_en": "Abortions",
+     "type": "entier",
+     "plage_plausible": [
+      0,
+      15
+     ]
+    },
+    {
+     "cle": "obstetrique.prematures",
+     "label_fr": "Accouchements prématurés (nombre)",
+     "label_en": "Preterm births",
+     "type": "entier",
+     "plage_plausible": [
+      0,
+      15
+     ]
+    },
+    {
+     "cle": "obstetrique.morts_foetales",
+     "label_fr": "Morts fœtales in utero (nombre)",
+     "label_en": "Stillbirths",
+     "type": "entier",
+     "plage_plausible": [
+      0,
+      15
+     ]
+    },
+    {
+     "cle": "obstetrique.accouchements_anterieurs",
+     "label_fr": "Accouchements antérieurs (liste, max 5)",
+     "label_en": "Previous deliveries",
+     "type": "liste_objets"
+    },
+    {
+     "cle": "obstetrique.gestite",
+     "label_fr": "Gestation",
+     "label_en": "Gravidity",
+     "type": "entier",
+     "plage_plausible": [
+      0,
+      20
+     ]
+    },
+    {
+     "cle": "obstetrique.parite",
+     "label_fr": "Parité",
+     "label_en": "Parity",
+     "type": "entier",
+     "plage_plausible": [
+      0,
+      20
+     ]
+    },
+    {
+     "cle": "obstetrique.enfants_vivants",
+     "label_fr": "Enfants vivants",
+     "label_en": "Living children",
+     "type": "entier",
+     "plage_plausible": [
+      0,
+      20
+     ]
+    },
+    {
+     "cle": "vaccination.vat_doses",
+     "label_fr": "VAT (doses)",
+     "label_en": "Tetanus doses",
+     "type": "entier",
+     "plage_plausible": [
+      0,
+      5
+     ]
+    },
+    {
+     "cle": "vaccination.rubeole",
+     "label_fr": "Vaccinée rubéole",
+     "label_en": "Rubella vaccinated",
+     "type": "booleen"
+    },
+    {
+     "cle": "vaccination.hepatite_b",
+     "label_fr": "Vaccinée hépatite B",
+     "label_en": "Hep B vaccinated",
+     "type": "booleen"
+    },
+    {
+     "cle": "depistage.frottis_iva",
+     "label_fr": "Frottis / IVA",
+     "label_en": "Pap smear / VIA",
+     "type": "texte"
+    }
+   ]
+  },
+  "GROSSESSE_ACTUELLE": {
+   "page_type_no": 3,
+   "champs": [
+    {
+     "cle": "grossesse.ddr",
+     "label_fr": "DDR",
+     "label_en": "Last menstrual period",
+     "type": "date"
+    },
+    {
+     "cle": "grossesse.taille_cm",
+     "label_fr": "Taille",
+     "label_en": "Height",
+     "type": "entier",
+     "unite": "cm",
+     "plage_plausible": [
+      130,
+      200
+     ]
+    },
+    {
+     "cle": "grossesse.groupage",
+     "label_fr": "Groupage",
+     "label_en": "Blood group",
+     "type": "choix",
+     "choix": [
+      "A",
+      "B",
+      "AB",
+      "O"
+     ]
+    },
+    {
+     "cle": "grossesse.rhesus",
+     "label_fr": "Rhésus",
+     "label_en": "Rhesus",
+     "type": "choix",
+     "choix": [
+      "POSITIF",
+      "NEGATIF"
+     ]
+    },
+    {
+     "cle": "grossesse.date_prevue_accouchement",
+     "label_fr": "Date prévue d'accouchement",
+     "label_en": "Expected delivery date",
+     "type": "date"
+    },
+    {
+     "cle": "grossesse.date_depassement_terme",
+     "label_fr": "Date de dépassement de terme",
+     "label_en": "Post-term date",
+     "type": "date"
+    },
+    {
+     "cle": "grossesse.tests.vih",
+     "label_fr": "Sérologie VIH",
+     "label_en": "HIV test",
+     "type": "choix",
+     "choix": [
+      "POSITIF",
+      "NEGATIF"
+     ]
+    },
+    {
+     "cle": "grossesse.tests.syphilis",
+     "label_fr": "Syphilis (TPHA/VDRL)",
+     "label_en": "Syphilis test",
+     "type": "choix",
+     "choix": [
+      "POSITIF",
+      "NEGATIF"
+     ]
+    },
+    {
+     "cle": "grossesse.tests.hepatite_b",
+     "label_fr": "Ag HBs",
+     "label_en": "Hepatitis B (HBsAg)",
+     "type": "choix",
+     "choix": [
+      "POSITIF",
+      "NEGATIF"
+     ]
+    },
+    {
+     "cle": "grossesse.tests.hepatite_c",
+     "label_fr": "Hépatite C",
+     "label_en": "Hepatitis C",
+     "type": "choix",
+     "choix": [
+      "POSITIF",
+      "NEGATIF"
+     ]
+    },
+    {
+     "cle": "grossesse.tests.rubeole",
+     "label_fr": "Rubéole",
+     "label_en": "Rubella",
+     "type": "choix",
+     "choix": [
+      "POSITIF",
+      "NEGATIF",
+      "IMMUNE",
+      "NON_IMMUNE"
+     ]
+    },
+    {
+     "cle": "grossesse.tests.toxoplasmose",
+     "label_fr": "Toxoplasmose",
+     "label_en": "Toxoplasmosis",
+     "type": "choix",
+     "choix": [
+      "POSITIF",
+      "NEGATIF",
+      "IMMUNE",
+      "NON_IMMUNE"
+     ]
+    },
+    {
+     "cle": "grossesse.tests.plaquettes",
+     "label_fr": "Plaquettes",
+     "label_en": "Platelets",
+     "type": "entier",
+     "unite": "/mm3 (x1000)",
+     "plage_plausible": [
+      50,
+      600
+     ]
+    },
+    {
+     "cle": "grossesse.tests.glycemie_g_l",
+     "label_fr": "Bilan glycémique",
+     "label_en": "Blood glucose",
+     "type": "decimal",
+     "unite": "g/L",
+     "plage_plausible": [
+      0.4,
+      3.0
+     ]
+    },
+    {
+     "cle": "grossesse.tests.rai",
+     "label_fr": "RAI",
+     "label_en": "Antibody screening",
+     "type": "choix",
+     "choix": [
+      "POSITIF",
+      "NEGATIF"
+     ]
+    },
+    {
+     "cle": "grossesse.traitement.fer",
+     "label_fr": "Fer",
+     "label_en": "Iron",
+     "type": "booleen"
+    }
+   ],
+   "visites": {
+    "cle": "grossesse.visites[i]",
+    "index": [
+     "T1_V1",
+     "T1_V2",
+     "T1_V3",
+     "T2_V1",
+     "T2_V2",
+     "T2_V3",
+     "MOIS_7",
+     "MOIS_8",
+     "MOIS_9"
+    ],
+    "champs": [
+     {
+      "cle": "date_rdv",
+      "label_fr": "Rendez-vous",
+      "label_en": "Appointment",
+      "type": "date"
+     },
+     {
+      "cle": "date_venue",
+      "label_fr": "Venue le",
+      "label_en": "Visit date",
+      "type": "date"
+     },
+     {
+      "cle": "relance",
+      "label_fr": "Visite de relance",
+      "label_en": "Follow-up visit",
+      "type": "booleen"
+     },
+     {
+      "cle": "age_gestationnel_sa",
+      "label_fr": "Âge probable (SA)",
+      "label_en": "Gestational age (weeks)",
+      "type": "entier",
+      "unite": "SA",
+      "plage_plausible": [
+       4,
+       44
+      ]
+     },
+     {
+      "cle": "poids_kg",
+      "label_fr": "Poids",
+      "label_en": "Weight",
+      "type": "decimal",
+      "unite": "kg",
+      "plage_plausible": [
+       35,
+       150
+      ]
+     },
+     {
+      "cle": "tension",
+      "label_fr": "TA",
+      "label_en": "Blood pressure",
+      "type": "tension",
+      "unite": "mmHg (sys/dia)"
+     },
+     {
+      "cle": "oedemes",
+      "label_fr": "Œdèmes",
+      "label_en": "Edema",
+      "type": "booleen"
+     },
+     {
+      "cle": "mouvements_actifs",
+      "label_fr": "Mouvements actifs",
+      "label_en": "Fetal movements",
+      "type": "booleen"
+     },
+     {
+      "cle": "hauteur_uterine_cm",
+      "label_fr": "HU",
+      "label_en": "Fundal height",
+      "type": "entier",
+      "unite": "cm",
+      "plage_plausible": [
+       5,
+       45
+      ]
+     },
+     {
+      "cle": "bcf",
+      "label_fr": "BCF",
+      "label_en": "Fetal heart rate",
+      "type": "entier",
+      "unite": "bpm",
+      "plage_plausible": [
+       100,
+       180
+      ]
+     },
+     {
+      "cle": "col",
+      "label_fr": "TV : état du col",
+      "label_en": "Cervix",
+      "type": "texte"
+     },
+     {
+      "cle": "presentation",
+      "label_fr": "TV : présentation",
+      "label_en": "Presentation",
+      "type": "choix",
+      "choix": [
+       "CEPHALIQUE",
+       "SIEGE",
+       "TRANSVERSE"
+      ]
+     },
+     {
+      "cle": "glucosurie",
+      "label_fr": "Glucosurie",
+      "label_en": "Glycosuria",
+      "type": "choix",
+      "choix": [
+       "POSITIF",
+       "NEGATIF"
+      ]
+     },
+     {
+      "cle": "albuminurie",
+      "label_fr": "Albuminurie",
+      "label_en": "Albuminuria",
+      "type": "choix",
+      "choix": [
+       "POSITIF",
+       "NEGATIF"
+      ]
+     },
+     {
+      "cle": "hemoglobine_g_dl",
+      "label_fr": "Hémoglobine",
+      "label_en": "Hemoglobin",
+      "type": "decimal",
+      "unite": "g/dL",
+      "plage_plausible": [
+       5,
+       18
+      ]
+     },
+     {
+      "cle": "examine_par_fonction",
+      "label_fr": "Examen fait par (fonction)",
+      "label_en": "Examined by (role)",
+      "type": "choix",
+      "choix": [
+       "MEDECIN",
+       "SAGE_FEMME",
+       "INFIRMIER"
+      ]
+     }
+    ]
+   }
+  },
+  "ACCOUCHEMENT": {
+   "page_type_no": 4,
+   "champs": [
+    {
+     "cle": "accouchement.lieu",
+     "label_fr": "Lieu",
+     "label_en": "Place",
+     "type": "choix",
+     "choix": [
+      "MAISON_ACCOUCHEMENT",
+      "MATERNITE",
+      "CLINIQUE_PRIVEE",
+      "DOMICILE_ASSISTE",
+      "DOMICILE_NON_ASSISTE",
+      "AUTRE"
+     ]
+    },
+    {
+     "cle": "accouchement.date",
+     "label_fr": "Date de l'accouchement",
+     "label_en": "Delivery date",
+     "type": "date"
+    },
+    {
+     "cle": "accouchement.mode",
+     "label_fr": "Mode",
+     "label_en": "Delivery mode",
+     "type": "choix",
+     "choix": [
+      "VOIE_BASSE",
+      "VOIE_BASSE_INSTRUMENTALE_FORCEPS",
+      "VOIE_BASSE_INSTRUMENTALE_VENTOUSE",
+      "CESARIENNE_PROGRAMMEE",
+      "CESARIENNE_URGENCE"
+     ]
+    },
+    {
+     "cle": "accouchement.episiotomie",
+     "label_fr": "Épisiotomie",
+     "label_en": "Episiotomy",
+     "type": "booleen"
+    },
+    {
+     "cle": "accouchement.indication_cesarienne",
+     "label_fr": "Indication de césarienne",
+     "label_en": "Cesarean indication",
+     "type": "texte"
+    },
+    {
+     "cle": "accouchement.complications",
+     "label_fr": "Complications",
+     "label_en": "Complications",
+     "type": "liste_choix",
+     "choix": [
+      "PRE_ECLAMPSIE",
+      "ECLAMPSIE",
+      "HEMORRAGIE",
+      "INFECTION",
+      "AUTRE"
+     ]
+    },
+    {
+     "cle": "nouveau_ne.etat",
+     "label_fr": "État du nouveau-né",
+     "label_en": "Newborn status",
+     "type": "choix",
+     "choix": [
+      "VIVANT",
+      "MORT_NE",
+      "DECES_MOINS_24H"
+     ]
+    },
+    {
+     "cle": "nouveau_ne.sexe",
+     "label_fr": "Sexe",
+     "label_en": "Sex",
+     "type": "choix",
+     "choix": [
+      "F",
+      "M"
+     ]
+    },
+    {
+     "cle": "nouveau_ne.poids_naissance_g",
+     "label_fr": "Poids à la naissance",
+     "label_en": "Birth weight",
+     "type": "entier",
+     "unite": "g",
+     "plage_plausible": [
+      400,
+      6000
+     ]
+    },
+    {
+     "cle": "nouveau_ne.perimetre_cranien_cm",
+     "label_fr": "Périmètre crânien",
+     "label_en": "Head circumference",
+     "type": "decimal",
+     "unite": "cm",
+     "plage_plausible": [
+      20,
+      45
+     ]
+    },
+    {
+     "cle": "nouveau_ne.anomalie",
+     "label_fr": "Anomalie",
+     "label_en": "Abnormality",
+     "type": "texte"
+    },
+    {
+     "cle": "nouveau_ne.age_gestationnel_sa",
+     "label_fr": "Âge gestationnel",
+     "label_en": "Gestational age",
+     "type": "entier",
+     "unite": "SA",
+     "plage_plausible": [
+      20,
+      44
+     ]
+    }
+   ]
+  },
+  "PP_PRECOCE_MERE": {
+   "page_type_no": 5,
+   "champs": [
+    {
+     "cle": "pp_precoce.mere.date_consultation",
+     "label_fr": "Date de consultation",
+     "label_en": "Visit date",
+     "type": "date"
+    },
+    {
+     "cle": "pp_precoce.mere.temperature_c",
+     "label_fr": "T°",
+     "label_en": "Temperature",
+     "type": "decimal",
+     "unite": "°C",
+     "plage_plausible": [
+      34,
+      42
+     ]
+    },
+    {
+     "cle": "pp_precoce.mere.tension",
+     "label_fr": "TA",
+     "label_en": "Blood pressure",
+     "type": "tension",
+     "unite": "mmHg (sys/dia)"
+    },
+    {
+     "cle": "pp_precoce.mere.pouls",
+     "label_fr": "Pouls",
+     "label_en": "Pulse",
+     "type": "entier",
+     "unite": "bpm",
+     "plage_plausible": [
+      40,
+      180
+     ]
+    },
+    {
+     "cle": "pp_precoce.mere.poids_kg",
+     "label_fr": "Poids",
+     "label_en": "Weight",
+     "type": "decimal",
+     "unite": "kg",
+     "plage_plausible": [
+      35,
+      150
+     ]
+    },
+    {
+     "cle": "pp_precoce.mere.conjonctives",
+     "label_fr": "Conjonctives",
+     "label_en": "Conjunctivae",
+     "type": "choix",
+     "choix": [
+      "NORMALES",
+      "DECOLOREES"
+     ]
+    },
+    {
+     "cle": "pp_precoce.mere.complications",
+     "label_fr": "Complications",
+     "label_en": "Complications",
+     "type": "liste_choix",
+     "choix": [
+      "HEMORRAGIE",
+      "INFECTION",
+      "ECLAMPSIE",
+      "PHLEBITE",
+      "COMPLICATIONS_MAMMAIRES",
+      "ANEMIE",
+      "AUTRE"
+     ]
+    },
+    {
+     "cle": "pp_precoce.mere.traitement",
+     "label_fr": "Traitement prescrit",
+     "label_en": "Treatment",
+     "type": "liste_choix",
+     "choix": [
+      "FER",
+      "VITAMINE_A",
+      "AUTRE"
+     ]
+    },
+    {
+     "cle": "pp_precoce.mere.prochain_rdv",
+     "label_fr": "Prochain rendez-vous",
+     "label_en": "Next appointment",
+     "type": "date"
+    },
+    {
+     "cle": "pp_precoce.mere.planification_familiale",
+     "label_fr": "Méthode contraceptive",
+     "label_en": "Family planning",
+     "type": "choix",
+     "choix": [
+      "PILULE",
+      "DIU",
+      "AUTRE",
+      "AUCUNE"
+     ]
+    }
+   ]
+  },
+  "PP_PRECOCE_NOUVEAU_NE": {
+   "page_type_no": 6,
+   "champs": [
+    {
+     "cle": "pp_precoce.nouveau_ne.date_consultation",
+     "label_fr": "Date de consultation",
+     "label_en": "Visit date",
+     "type": "date"
+    },
+    {
+     "cle": "pp_precoce.nouveau_ne.age_jours",
+     "label_fr": "Âge",
+     "label_en": "Age",
+     "type": "entier",
+     "unite": "jours",
+     "plage_plausible": [
+      0,
+      120
+     ]
+    },
+    {
+     "cle": "pp_precoce.nouveau_ne.temperature_c",
+     "label_fr": "Température",
+     "label_en": "Temperature",
+     "type": "decimal",
+     "unite": "°C",
+     "plage_plausible": [
+      34,
+      42
+     ]
+    },
+    {
+     "cle": "pp_precoce.nouveau_ne.poids_g",
+     "label_fr": "Poids",
+     "label_en": "Weight",
+     "type": "entier",
+     "unite": "g",
+     "plage_plausible": [
+      400,
+      9000
+     ]
+    },
+    {
+     "cle": "pp_precoce.nouveau_ne.taille_cm",
+     "label_fr": "Taille",
+     "label_en": "Length",
+     "type": "decimal",
+     "unite": "cm",
+     "plage_plausible": [
+      25,
+      75
+     ]
+    },
+    {
+     "cle": "pp_precoce.nouveau_ne.perimetre_cranien_cm",
+     "label_fr": "Périmètre crânien",
+     "label_en": "Head circumference",
+     "type": "decimal",
+     "unite": "cm",
+     "plage_plausible": [
+      20,
+      50
+     ]
+    },
+    {
+     "cle": "pp_precoce.nouveau_ne.allaitement",
+     "label_fr": "Allaitement",
+     "label_en": "Breastfeeding",
+     "type": "choix",
+     "choix": [
+      "EXCLUSIF",
+      "ARTIFICIEL",
+      "MIXTE"
+     ]
+    },
+    {
+     "cle": "pp_precoce.nouveau_ne.signes_danger",
+     "label_fr": "Signes d'une affection grave",
+     "label_en": "Danger signs",
+     "type": "liste_choix",
+     "choix": [
+      "CONVULSIONS",
+      "REFUS_TETER",
+      "HEMATEMESES",
+      "MELAENAS",
+      "DIARRHEE",
+      "ICTERE",
+      "TIRAGE",
+      "TOUX",
+      "RYTHME_RESP_ANORMAL",
+      "FIEVRE",
+      "HYPOTHERMIE",
+      "AUTRE"
+     ]
+    },
+    {
+     "cle": "pp_precoce.nouveau_ne.vaccins_du_jour",
+     "label_fr": "Vaccins administrés",
+     "label_en": "Vaccines given",
+     "type": "liste_choix",
+     "choix": [
+      "BCG",
+      "HB"
+     ]
+    },
+    {
+     "cle": "pp_precoce.nouveau_ne.transfert",
+     "label_fr": "Transfert / référence",
+     "label_en": "Referral",
+     "type": "booleen"
+    },
+    {
+     "cle": "pp_precoce.nouveau_ne.prochaine_visite",
+     "label_fr": "Prochaine visite",
+     "label_en": "Next visit",
+     "type": "date"
+    }
+   ]
+  },
+  "PP_TARDIF_MERE": {
+   "page_type_no": 7,
+   "champs": [
+    {
+     "cle": "pp_tardif.mere.date_consultation",
+     "label_fr": "Date de consultation",
+     "label_en": "Visit date",
+     "type": "date"
+    },
+    {
+     "cle": "pp_tardif.mere.temperature_c",
+     "label_fr": "T°",
+     "label_en": "Temperature",
+     "type": "decimal",
+     "unite": "°C",
+     "plage_plausible": [
+      34,
+      42
+     ]
+    },
+    {
+     "cle": "pp_tardif.mere.tension",
+     "label_fr": "TA",
+     "label_en": "Blood pressure",
+     "type": "tension",
+     "unite": "mmHg (sys/dia)"
+    },
+    {
+     "cle": "pp_tardif.mere.pouls",
+     "label_fr": "Pouls",
+     "label_en": "Pulse",
+     "type": "entier",
+     "unite": "bpm",
+     "plage_plausible": [
+      40,
+      180
+     ]
+    },
+    {
+     "cle": "pp_tardif.mere.poids_kg",
+     "label_fr": "Poids",
+     "label_en": "Weight",
+     "type": "decimal",
+     "unite": "kg",
+     "plage_plausible": [
+      35,
+      150
+     ]
+    },
+    {
+     "cle": "pp_tardif.mere.conjonctives",
+     "label_fr": "Conjonctives",
+     "label_en": "Conjunctivae",
+     "type": "choix",
+     "choix": [
+      "NORMALES",
+      "DECOLOREES"
+     ]
+    },
+    {
+     "cle": "pp_tardif.mere.complications",
+     "label_fr": "Complications",
+     "label_en": "Complications",
+     "type": "liste_choix",
+     "choix": [
+      "HEMORRAGIE",
+      "INFECTION",
+      "ECLAMPSIE",
+      "PHLEBITE",
+      "COMPLICATIONS_MAMMAIRES",
+      "ANEMIE",
+      "AUTRE"
+     ]
+    },
+    {
+     "cle": "pp_tardif.mere.traitement",
+     "label_fr": "Traitement prescrit",
+     "label_en": "Treatment",
+     "type": "liste_choix",
+     "choix": [
+      "FER",
+      "VITAMINE_A",
+      "AUTRE"
+     ]
+    },
+    {
+     "cle": "pp_tardif.mere.prochain_rdv",
+     "label_fr": "Prochain rendez-vous",
+     "label_en": "Next appointment",
+     "type": "date"
+    },
+    {
+     "cle": "pp_tardif.mere.planification_familiale",
+     "label_fr": "Méthode contraceptive",
+     "label_en": "Family planning",
+     "type": "choix",
+     "choix": [
+      "PILULE",
+      "DIU",
+      "AUTRE",
+      "AUCUNE"
+     ]
+    }
+   ]
+  },
+  "PP_TARDIF_NOUVEAU_NE": {
+   "page_type_no": 8,
+   "champs": [
+    {
+     "cle": "pp_tardif.nouveau_ne.date_consultation",
+     "label_fr": "Date de consultation",
+     "label_en": "Visit date",
+     "type": "date"
+    },
+    {
+     "cle": "pp_tardif.nouveau_ne.age_jours",
+     "label_fr": "Âge",
+     "label_en": "Age",
+     "type": "entier",
+     "unite": "jours",
+     "plage_plausible": [
+      0,
+      120
+     ]
+    },
+    {
+     "cle": "pp_tardif.nouveau_ne.temperature_c",
+     "label_fr": "Température",
+     "label_en": "Temperature",
+     "type": "decimal",
+     "unite": "°C",
+     "plage_plausible": [
+      34,
+      42
+     ]
+    },
+    {
+     "cle": "pp_tardif.nouveau_ne.poids_g",
+     "label_fr": "Poids",
+     "label_en": "Weight",
+     "type": "entier",
+     "unite": "g",
+     "plage_plausible": [
+      400,
+      9000
+     ]
+    },
+    {
+     "cle": "pp_tardif.nouveau_ne.taille_cm",
+     "label_fr": "Taille",
+     "label_en": "Length",
+     "type": "decimal",
+     "unite": "cm",
+     "plage_plausible": [
+      25,
+      75
+     ]
+    },
+    {
+     "cle": "pp_tardif.nouveau_ne.perimetre_cranien_cm",
+     "label_fr": "Périmètre crânien",
+     "label_en": "Head circumference",
+     "type": "decimal",
+     "unite": "cm",
+     "plage_plausible": [
+      20,
+      50
+     ]
+    },
+    {
+     "cle": "pp_tardif.nouveau_ne.allaitement",
+     "label_fr": "Allaitement",
+     "label_en": "Breastfeeding",
+     "type": "choix",
+     "choix": [
+      "EXCLUSIF",
+      "ARTIFICIEL",
+      "MIXTE"
+     ]
+    },
+    {
+     "cle": "pp_tardif.nouveau_ne.signes_danger",
+     "label_fr": "Signes d'une affection grave",
+     "label_en": "Danger signs",
+     "type": "liste_choix",
+     "choix": [
+      "CONVULSIONS",
+      "REFUS_TETER",
+      "HEMATEMESES",
+      "MELAENAS",
+      "DIARRHEE",
+      "ICTERE",
+      "TIRAGE",
+      "TOUX",
+      "RYTHME_RESP_ANORMAL",
+      "FIEVRE",
+      "HYPOTHERMIE",
+      "AUTRE"
+     ]
+    },
+    {
+     "cle": "pp_tardif.nouveau_ne.vaccins_du_jour",
+     "label_fr": "Vaccins administrés",
+     "label_en": "Vaccines given",
+     "type": "liste_choix",
+     "choix": [
+      "BCG",
+      "HB"
+     ]
+    },
+    {
+     "cle": "pp_tardif.nouveau_ne.transfert",
+     "label_fr": "Transfert / référence",
+     "label_en": "Referral",
+     "type": "booleen"
+    },
+    {
+     "cle": "pp_tardif.nouveau_ne.prochaine_visite",
+     "label_fr": "Prochaine visite",
+     "label_en": "Next visit",
+     "type": "date"
+    }
+   ]
+  }
+ }
+}

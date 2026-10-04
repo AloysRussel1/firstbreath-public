@@ -1,0 +1,2093 @@
+{
+ "variante": "rotation",
+ "page_pdf": 3,
+ "patiente": 1,
+ "type_page": "GROSSESSE_ACTUELLE",
+ "image_sha256": "84e4ed15c56b7a974e83f45d6bb607a5066e22163b8f86f2723ca9e94c5cdc35",
+ "modele": "claude-sonnet-5",
+ "effort": "medium",
+ "version_prompt": "grossesse-v1",
+ "ratio_reflexion": 4.98,
+ "champs": [
+  {
+   "champ": "grossesse.ddr",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.taille_cm",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.groupage",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.rhesus",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.date_prevue_accouchement",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.date_depassement_terme",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.tests.vih",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.tests.syphilis",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.tests.hepatite_b",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.tests.hepatite_c",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.tests.rubeole",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.tests.toxoplasmose",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.tests.plaquettes",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.tests.glycemie_g_l",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.tests.rai",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.traitement.fer",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].date_rdv",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].date_venue",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].relance",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].poids_kg",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].tension",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].oedemes",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].mouvements_actifs",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].bcf",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].col",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].presentation",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].glucosurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].albuminurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[0].examine_par_fonction",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].date_rdv",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].date_venue",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].relance",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].poids_kg",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].tension",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].oedemes",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].mouvements_actifs",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].bcf",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].col",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].presentation",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].glucosurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].albuminurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[1].examine_par_fonction",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].date_rdv",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].date_venue",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].relance",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].poids_kg",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].tension",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].oedemes",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].mouvements_actifs",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].bcf",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].col",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].presentation",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].glucosurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].albuminurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[2].examine_par_fonction",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].date_rdv",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].date_venue",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].relance",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].poids_kg",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].tension",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].oedemes",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].mouvements_actifs",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].bcf",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].col",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].presentation",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].glucosurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].albuminurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[3].examine_par_fonction",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].date_rdv",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].date_venue",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].relance",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].poids_kg",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].tension",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].oedemes",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].mouvements_actifs",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].bcf",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].col",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].presentation",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].glucosurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].albuminurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[4].examine_par_fonction",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].date_rdv",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].date_venue",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].relance",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].poids_kg",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].tension",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].oedemes",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].mouvements_actifs",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].bcf",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].col",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].presentation",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].glucosurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].albuminurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[5].examine_par_fonction",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].date_rdv",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].date_venue",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].relance",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].poids_kg",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].tension",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].oedemes",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].mouvements_actifs",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].bcf",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].col",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].presentation",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].glucosurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].albuminurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[6].examine_par_fonction",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].date_rdv",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].date_venue",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].relance",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].poids_kg",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].tension",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].oedemes",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].mouvements_actifs",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].bcf",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].col",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].presentation",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].glucosurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].albuminurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[7].examine_par_fonction",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].date_rdv",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].date_venue",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].relance",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].age_gestationnel_sa",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].poids_kg",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].tension",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].oedemes",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].mouvements_actifs",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].hauteur_uterine_cm",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].bcf",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].col",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].presentation",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].glucosurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].albuminurie",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].hemoglobine_g_dl",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  },
+  {
+   "champ": "grossesse.visites[8].examine_par_fonction",
+   "valeur": null,
+   "statut": "A_REVISER",
+   "confiance": 0.0,
+   "signaux": {
+    "confiance_modele": 0.0,
+    "plausible": true,
+    "coherent": true,
+    "ratio_reflexion": 4.98,
+    "raison": "champ absent de la réponse du modèle"
+   }
+  }
+ ]
+}

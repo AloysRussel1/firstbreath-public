@@ -1,0 +1,85 @@
+/* Pages vitrine : Accueil, Profil, À propos. */
+
+.vitrine {
+  min-height: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--creme);
+}
+.vitrine-haut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espace-3);
+  padding: var(--espace-3) var(--espace-4);
+  border-bottom: 1px solid var(--papier-bord);
+}
+.marque { display: inline-flex; align-items: center; gap: var(--espace-3); }
+.marque b { font-family: var(--police-titre); font-size: 20px; font-weight: 600; }
+.marque small { display: block; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--encre-secondaire); }
+.bouton-icone {
+  min-width: var(--cible);
+  min-height: var(--cible);
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.bouton-icone:hover { background: var(--papier-ligne); }
+
+.vitrine-corps { flex: 1; padding: var(--espace-5) var(--espace-4); }
+.vitrine-corps.etroit { display: flex; flex-direction: column; gap: var(--espace-4); }
+.hero { text-align: center; animation: arrivee 300ms var(--courbe) both; }
+.surtitre { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--encre-secondaire); }
+.accroche { margin: var(--espace-3) 0 var(--espace-2); font-size: 40px; line-height: 1.04; letter-spacing: -0.035em; }
+.accroche em { font-style: italic; color: var(--marque); }
+.intro { margin: var(--espace-3) auto 0; max-width: 420px; color: var(--encre); }
+.hero .intro { text-align: center; }
+.actions { display: flex; flex-direction: column; align-items: center; gap: var(--espace-3); margin-top: var(--espace-5); }
+
+.etapes-vitrine { list-style: none; margin: var(--espace-6) 0 0; padding: 0; display: flex; flex-direction: column; gap: var(--espace-2); }
+.etapes-vitrine li {
+  display: flex;
+  gap: var(--espace-4);
+  align-items: flex-start;
+  padding: var(--espace-4);
+  background: var(--papier);
+  border: 1px solid var(--papier-bord);
+  border-radius: var(--rayon-depart) var(--rayon) var(--rayon) var(--rayon);
+}
+.etapes-vitrine li span { display: flex; flex-direction: column; }
+.etapes-vitrine li b { font-size: 17px; }
+.etapes-vitrine li span span { color: var(--encre-secondaire); font-size: 15px; }
+.etape-numero { font-family: var(--police-titre); font-size: 26px; line-height: 1; color: var(--marque); min-width: 38px; }
+.vitrine-pied { padding: var(--espace-4); text-align: center; font-size: 13px; color: var(--encre-secondaire); border-top: 1px solid var(--papier-bord); }
+
+/* Profil */
+.titre-page { font-size: 32px; }
+.formulaire { display: flex; flex-direction: column; gap: var(--espace-5); }
+.choix-role { border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--espace-2); }
+.choix-role legend { font-weight: 700; margin-bottom: var(--espace-2); }
+.option-role {
+  display: flex;
+  gap: var(--espace-3);
+  align-items: flex-start;
+  min-height: var(--cible-grande);
+  padding: var(--espace-3) var(--espace-4);
+  border: 1.5px solid var(--papier-bord);
+  border-radius: var(--rayon-petit);
+  background: #fff;
+  cursor: pointer;
+}
+.option-role.choisie { border-color: var(--encre); box-shadow: inset 0 0 0 1px var(--encre); }
+.option-role input { width: 22px; height: 22px; margin-top: 2px; accent-color: var(--encre); }
+.option-role span { display: flex; flex-direction: column; }
+.option-role small { color: var(--encre-secondaire); font-size: 14px; }
+
+/* À propos */
+.bloc-apropos { display: flex; gap: var(--espace-4); padding: var(--espace-4) 0; border-top: 1px solid var(--papier-bord); }
+.bloc-apropos h2 { font-size: 22px; margin-bottom: var(--espace-2); }
+.bloc-apropos p, .bloc-apropos ul { margin: 0; }
+.bloc-apropos ul { padding-left: 18px; display: flex; flex-direction: column; gap: var(--espace-1); }

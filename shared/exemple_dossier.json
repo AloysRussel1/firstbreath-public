@@ -1,0 +1,34 @@
+{
+  "dossier_id": "d_7f3a9c21",
+  "patiente_id": null,
+  "numero_fiche": "2026-823-001",
+  "sage_femme_id": "sf_01",
+  "etat": "A_REVISER",
+  "pages": [
+    {
+      "page_no": 1,
+      "type_page": "IDENTIFICATION",
+      "image_id": "img_4b2e",
+      "image_hash": "sha256:...",
+      "date_capture": "2026-10-03T14:05:00-04:00",
+      "champs": [
+        {"champ": "identification.numero_fiche", "valeur": "2026-823-001", "statut": "CONNU", "confiance": 0.93, "page_source": 1},
+        {"champ": "identification.region", "valeur": "Rabat-Salé-Kénitra", "statut": "CONNU", "confiance": 0.88, "page_source": 1},
+        {"champ": "identification.grossesse_a_risque", "valeur": null, "statut": "NON_FOURNI", "confiance": 0.81, "page_source": 1}
+      ]
+    },
+    {
+      "page_no": 3,
+      "type_page": "GROSSESSE_ACTUELLE",
+      "image_id": "img_9c11",
+      "image_hash": "sha256:...",
+      "date_capture": "2026-10-03T14:06:00-04:00",
+      "champs": [
+        {"champ": "grossesse.ddr", "valeur": "2025-04-26", "statut": "CONNU", "confiance": 0.90, "page_source": 3},
+        {"champ": "grossesse.visites[0].poids_kg", "valeur": 58.8, "statut": "CONNU", "confiance": 0.84, "page_source": 3},
+        {"champ": "grossesse.visites[0].tension", "valeur": "104/74", "statut": "A_REVISER", "confiance": 0.52, "page_source": 3},
+        {"champ": "grossesse.tests.vih", "valeur": null, "statut": "ILLISIBLE", "confiance": 0.30, "page_source": 3}
+      ]
+    }
+  ]
+}
